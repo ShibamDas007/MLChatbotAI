@@ -17,6 +17,7 @@ pip install MLChatbotAI
 ```
 
 ```bash
+# This code for use the pre exits model 
 from MLChatbotAI import ChatBot
 
 bot = ChatBot()
@@ -27,6 +28,7 @@ response = bot.get_response(user_input)
 
 print(response)
 
+# This portion use for models which is train on external data
 custom_model_path = "path/to/custom_model.h5"
 custom_words_path = "path/to/custom_words.pkl"
 custom_classes_path = "path/to/custom_classes.pkl"
@@ -39,12 +41,14 @@ print(response_custom)
 # Train Chatbot with external data
 
 ```bash
+# This for how can train model with pre built data
 from MLChatbotAI import ChatBotTrainer
 
 trainer = ChatBotTrainer()
 
 trained_model_default, words_default, classes_default = trainer.train_default()
 
+# This is example of train model on custom data wihtout giving no path
 custom_intents_data = {
     "intents": [
         {"tag": "greeting", "patterns": ["Hi", "Hello", "Hey"], "responses": ["Hello! How can I help you?"]},
@@ -53,6 +57,7 @@ custom_intents_data = {
 }
 trained_model_custom, words_custom, classes_custom = trainer.train_custom(custom_intents_data)
 
+# This is code for train model with giving path
 file_path = "path/to/custom_intents_file.json"
 trained_model_file, words_file, classes_file = trainer.train_from_file(file_path)
 ```
