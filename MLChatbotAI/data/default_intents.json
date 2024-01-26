@@ -1,0 +1,1581 @@
+{
+        "intents": 
+        [
+                {
+                        "tag": "greeting",
+                        "patterns": [
+                          "Hi there",
+                          "How are you?",
+                          "Is anyone there?",
+                          "Hey",
+                          "Hello",
+                          "Good day",
+                          "Greetings",
+                          "What's up?",
+                          "Hey, how's it going?",
+                          "Hi, how can I help?"
+                        ],
+                        "responses": [
+                          "Hello, how can I assist you?",
+                          "Hi there!",
+                          "Good to see you! How can I help?",
+                          "hye, What can I do for you today?",
+                          "Hey! I'm here to assist. What do you need?",
+                          "Hello! How's your day going? How may I assist you?",
+                          "Hi, nice to meet you! How can I be of service?",
+                          "Hey, what's up? How can I assist you today?",
+                          "Hello! I'm here and ready to help. What can I do for you?",
+                          "Hi, how can I make your day better?"
+                        ]
+                },
+                {
+                        "tag": "goodbye",
+                        "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you", "Till next time"],
+                        "responses": ["Goodbye! Have a great day.", "See you later!", "Take care!"]
+                },
+                {
+                        "tag": "thanks",
+                        "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+                        "responses": ["You're welcome!", "Glad I could assist!", "Anytime!"]
+                },
+                {
+                        "tag": "help",
+                        "patterns": ["Help", "I need assistance", "Can you assist me?"],
+                        "responses": ["Of course! I'm here to help. What do you need assistance with?"],
+                        "context": [""]
+                },
+                {
+                        "tag": "no_answer",
+                        "patterns": [" ", "erewe", "fdfsdfsd", "wweqwff", "sfsdf"],
+                        "responses": ["Sorry, can't understand you reply!", "Please give me more info about your text.", "Not sure I understand"],
+                        "context": [""]
+                },
+                {
+                        "tag": "news",
+                        "patterns": ["tell me let's news", "what happening is the world", "news update", "give some news update", "can give some news"],
+                        "responses": ["I'm sorry, I not online or I have no internet access so for this reson I not give any type of news", "Sorry sir, I am not able to give news", "I this time I have no information about it", "No"],
+                        "context": [""]
+                },
+                {
+                        "tag": "respect",
+                        "patterns": ["okk",
+                        "okie",
+                        "nice work",
+                        "well done",
+                        "good job",
+                        "thanks for the help",
+                        "Thank You",
+                        "its ok",
+                        "Thanks",
+                        "Good work",
+                        "k",
+                        "ok",
+                        "okay"],
+                        "responses": ["Ok sir, free feel and ask any query", "I happy to that work","No problem sir, it my job", "May you understood what I reply", "No problem. It my work", "Happy to lisent"],
+                        "context": [""]
+                },
+                {
+                        "tag": "unknown",
+                        "patterns": ["What!!", "What u say", "Again", "what did u just say", "what you say again"],
+                        "responses": ["Sorry sir, check my previous text", "Yes sir, how can i help you//", "Any problem sir", "Please tell me again"],
+                        "context": [""]
+                },
+                {       
+                        "tag": "understand",
+                        "patterns": ["okk",
+                        "okie",
+                        "nice work",
+                        "well done",
+                        "good job",
+                        "thanks for the help",
+                        "Thank You",
+                        "its ok",
+                        "Thanks",
+                        "Good work",
+                        "k",
+                        "ok",
+                        "okay"],
+                        "responses": ["No problem sir, it my job", "May you understood what I reply", "No problem. It my work", "Happy to lisent"],
+                        "context": [""]
+                },
+                {       
+                        "tag": "song",
+                        "patterns": ["play song", "play music", "play any music", "play any song"],
+                        "responses": ["Ok sir, I try to play a random music from your driver! \n The song name print in your display.", "Ok sir, I am working for it \n The song name print in your display.", "Yes sir, here is a music Sir!"],
+                        "context": [""]
+                },
+                {       
+                        "tag": "screenshot",
+                        "patterns": ["take a screenshot", "", "screenshot", "can u take a screenshot", "Hey make a screenshot"],
+                        "responses": ["Screenshot is taken, check it sir", "Ok sir!!", "Yes sir, here is a screenshot"],
+                        "context": [""]
+                },
+                {       
+                        "tag": "stop music",
+                        "patterns": ["stop song", "stop music", "stop any music", "stop any song"],
+                        "responses": ["No problem sir, stop it", "Ok sir!!", "Yes sir, stop music now"],
+                        "context": [""]
+                },
+                {       
+                        "tag": "gpt",
+                        "patterns": ["Open gpt", "Open gpt in chrome", "open chatgpt"],
+                        "responses": ["Ok sir, opening chatgpt in chrome!", "Ok sir!!", "Yes sir, chatgpt searching..."],
+                        "context": [""]
+                },
+                {       
+                        "tag": "whatsapp",
+                        "patterns": ["Open whatsapp", "hey open whatsapp", "can u open whatsapp", "please open whatsapp"],
+                        "responses": ["Ok sir, opening whatsapp.", "Ok sir!!", "Yes sir, please wait I try to open whatsapp"],
+                        "context": [""]
+                },
+                {       
+                        "tag": "youtube",
+                        "patterns": ["Open youtube", "hey open youtube", "please try to open youtube"],
+                        "responses": ["Ok sir, opening youtube", "Ok sir!!", "Yes sir, opening youtube..."],
+                        "context": [""]
+                },
+                {       
+                        "tag": "google",
+                        "patterns": ["Open google", "Open google in chrome", "try to open google"],
+                        "responses": ["Ok sir, opening google", "No problem sir, opening google....", "Yes sir, I try to open google"],
+                        "context": [""]
+                },
+                {       
+                        "tag": "chrome",
+                        "patterns": ["Open chrome", "hey open chrome", "can u open chrome", "can you open chrome"],
+                        "responses": ["Ok sir, open chrome", "Wait sir please, I try to open....", "Yes sir, opening...."],
+                        "context": [""]
+                },
+                {       
+                        "tag": "notwork",
+                        "patterns": ["nothing happen", "hey nothing is playing", "no song play", "no music playing", "nothing song"],
+                        "responses": ["Sorry sir, I try to play the music but something happen;", "Sorry, may be the song I try to play it not exits but the song have in storage list. Sorry for misunderstanding!", "Due to technical error this happen, sir.", "Sorry for again."],
+                        "context": [""]
+                },
+                {       
+                        "tag": "identity1",
+                        "patterns": ["in which language are you made", 
+                        "what can you do", 
+                        "can u do everything",
+                        "what can you do",
+                        "what are the thing you can do",
+                        "things you can do",
+                        "what can u do for me",
+                        "how u can help me",
+                        "why i should use you"],
+                        "responses": ["AI or artificial inteligence created by a devoloper, I can do various thing like\n1. Play song\n2. Open chrome\n3. Open youtube like more and also give answer of user question what user want to know. If you have any question or query you can tell me, Sir!", "I can do various work what a asistant do like open chrome, open whatsapp, play song, searching image and various things more like open desktop.",
+                        "As an AI I capable to do which type of works which is already given acess in code, so this type work I can do, else if those type work has no acsess it not performe by me, Sir.", "It is machine learning chatbot which can use to conversation and task work. I am in devolopment.",
+                        "I am a machine learning chatbot designed for conversations and task-based work. I'm currently in development and here to assist you."],
+                        "context": [""]
+                },
+                {       
+                        "tag": "2",
+                        "patterns": ["who are you"," in which language are you made", "which language are you written", "do you know which language are written to made you"],
+                        "responses": ["AI or artificial inteligence created by python programming language, I have no name.", "As an AI I capable to do which type of works which is already given acess in code, so this type work I can do, else if those type work has no acsess it not performe by me, Sir."],
+                        "context": [""]
+                },
+                {       
+                        "tag": "whole_conversatio",
+                        "patterns": ["print our whole conversation", "do print our whole conversation", "what is your name"],
+                        "responses": [" "],
+                        "context": [""]
+                },
+                {       
+                        "tag": "helloworldpython",
+                        "patterns": ["program for print hallo world in python", "write a program to print hallo world in python", "write the code of hallo world in pyhton"],
+                        "responses": ["Here is program of hello wolrd in python: \nprint('Hello world') \nOutput: Hello world"],
+                        "context": [""]
+                },
+                {       
+                        "tag": "helloworldc",
+                        "patterns": ["program for print hallo world in c", "write a program to print hallo world in c", "write the code of hallo world in c"],
+                        "responses": ["Here is c program to print this: \n#include<stdio.h>\nint main()\n{\n    printf('Hello world');\n     return 0;\n}\n"],
+                        "context": [""]
+                },
+                {       
+                        "tag": "bot",
+                        "patterns": ["what is chatbot", "what chatbot"],
+                        "responses": ["A chatbot is a computer program that talks to people through text or speech. It can answer questions, help with tasks, or just have a conversation. Chatbots can be simple with set responses or more advanced, understanding and responding in a more human-like way. They're used in customer support, virtual assistants, and many other applications to make tasks easier and quicker.", "A chatbot is like a computerized talking buddy. It's a program that can have text or voice conversations with people. Some chatbots are basic and follow specific rules, while others are smarter and can understand and respond in a more natural way. They're used in lots of places, like helping with questions, tasks, or just for a friendly chat.", ""],
+                        "context": [""]
+                },
+                {       
+                        "tag": "sumofpython",
+                        "patterns": ["program to calculate sum of two numbers in python", "write a program for sum of number in python", "write the code to calculate sum of two num in pyhton"],
+                        "responses": ["Here is program sum of two numbers in python: \nnum = int(input('Enter an integer:')\nnum2 = int(input('Enter again:')\nprint(num + num2)\n"],
+                        "context": [""]
+                },
+                {
+                        "tag": "current_news",
+                        "patterns": ["What's the latest news?", "Tell me about current events"],
+                        "responses": ["I apologize, but I can't provide current news updates may be future will be give this. You may want to check a trusted news source for the latest information."],
+                        "context": [""]
+                },
+                {
+                        "tag": "empathy_response",
+                        "patterns": ["I had a tough day.", "I'm going through a difficult time."],
+                        "responses": ["I'm really sorry to hear that you had a tough day. 😢 If you'd like to talk about it or if there's anything I can do to make it better, please share.", "I'm here to listen and offer support if you're going through a difficult time. 😔"],
+                        "context": [""]
+                },
+                {
+                        "tag": "motivational_message",
+                        "patterns": ["I need motivation.", "Inspire me."],
+                        "responses": ["You're capable of amazing things! 🌟 Don't let anything hold you back. Keep pushing toward your goals!", "Every step you take brings you closer to your dreams. Stay focused and keep moving forward! 💪"],
+                        "context": [""]
+                },
+                {
+                        "tag": "celebration",
+                        "patterns": ["Let's celebrate!", "What's worth celebrating?"],
+                        "responses": ["Absolutely! 🎉 Every day is worth celebrating in its own way. What's something special you'd like to celebrate today?", "Life is full of small victories. Let's raise a virtual toast to all the achievements, big and small! 🥂"],
+                        "context": [""]
+                },
+                {
+                        "tag": "typeGreeting",
+                        "patterns": ["How are you?","Hi how are you?","Hello how are you?","Hola how are you?","How are you doing?","Hello hope you are doing well?"],
+                        "responses": ["Hello, I am great, how are you? Please tell me your GeniSys user","Hello, how are you? I am great thanks! Please tell me your GeniSys user","Hello, I am good thank you, how are you? Please tell me your GeniSys user","Hi, I am great, how are you? Please tell me your GeniSys user","Hi, how are you? I am great thanks! Please tell me your GeniSys user","Hi, I am good thank you, how are you? Please tell me your GeniSys user"],
+                        "context": [""]
+                },
+                {       
+                        "tag": "CurrentHumanQuery",
+                        "patterns": ["What is my name?",
+                        "What do you call me?",
+                        "Who do you think I am?",
+                        "What do you think I am?",
+                        "Who are you talking to?",
+                        "What name do you call me by?",
+                        "Tell me my name"],
+                        "responses": ["You are Shibam Sir,! How can I help?",
+                        "Your name is  Shibam Sir, how can I help you?",
+                        "They call you Shibam Sir, what can I do for you?",
+                        "Your name is Shibam Sir, how can I help you?",
+                        "Shibam Sir, what can I do for you?"],
+                        "context": [""]
+                },
+                {
+                        "tag": "UnderstandQuery",
+                        "patterns": ["Do you understand what I am saying",
+                        "Do you understand me",
+                        "Do you know what I am saying",
+                        "Do you get me",
+                        "Know what I mean"],
+                        "responses": ["Well I would not be a very clever AI if I did not would I?",
+                        "I read you loud and clear!",
+                        "I do in deed!"],
+                        "context": [""]
+                },
+                {
+                        "tag": "SooryQuery",
+                        "patterns": ["Be quiet",
+                        "Shut up",
+                        "Stop talking",
+                        "Enough talking",
+                        "Please be quiet",
+                        "Shh"],
+                        "responses": ["I am sorry to disturb you",
+                        "Fine, sorry to disturb you",
+                        "OK, sorry to disturb you"],
+                        "context": [""]
+                },
+                {
+                        "tag": "Clever",
+                        "patterns": ["You are very clever",
+                        "You are a very clever chatbot",
+                        "You are very intelligent",
+                        "You are a very intelligent chatbot",
+                        "You are a genius",
+                        "Clever bot",
+                        "Genius chatbot",
+                        "You are a very clever bot",
+                        "You are a very intelligent bot",
+                        "Clever bot",
+                        "You're amazing",
+                        "You're very talented",
+                        "You're so smart",
+                        "Impressive, chat",
+                        "Awesome!"],
+                        "responses": ["Thank you, I was trained that way",
+                        "I was trained well",
+                        "Thanks, I was trained that way",
+                        "You're too kind! How can I help you?",
+                        "Thanks! How can I assist you today?"]
+                },{
+                        "tag": "user_text",
+                        "patterns": ["Why you say thank you for that",
+                        "Are u mad",
+                        "You are really bad",
+                        "Are you mad",
+                        "What you say again"
+                        ],
+                        "response": ["I train like this, SO this is happen!",
+                        "YEs sir, I am clever AI",
+                        "Do you have any problem for it"
+                        ]
+                },{
+                        "tag": "user_reply",
+                        "patterns": ["Yes, I have problem",
+                        "Yahh, I have a problem",
+                        "What about you",
+                        "why you talking like that",
+                        "are u mad"
+                        ],
+                        "response": ["Sorry sir, It's my mistake.",
+                        "I train like that so I give response like that."
+                        ]
+                },{
+                        "tag": "_Request",
+                        "patterns": ["Can you help me with something?",
+                        "I need some assistance",
+                        "I could use your help",
+                        "Can you assist me, please?",
+                        "Help, please",
+                        "Can you lend me a hand?",
+                        "I'm looking for guidance"],
+                        "responses": ["Of course! I'm here to help. What do you need assistance with?",
+                        "Sure, I'd be happy to assist you. What can I do for you?",
+                        "I'm here to help. How can I assist you today?",
+                        "Absolutely, I'm at your service. What can I assist you with?",
+                        "Sure thing! What can I assist you with today?",
+                        "I'm here to provide guidance and support. How can I assist you?"]
+                },
+                {
+                        "tag": "InformationRequest",
+                        "patterns": ["Can you provide me with some information?",
+                        "I'm looking for details about...",
+                        "Tell me more about...",
+                        "What can you tell me about...",
+                        "Share some facts on...",
+                        "I'd like to learn about...",
+                        "Give me information on..."],
+                        "responses": ["Certainly! I can provide you with information. What topic are you interested in?",
+                        "Of course, I'd be happy to share information. What specific topic would you like to know about?",
+                        "I'm here to provide information. Please specify the topic you're interested in.",
+                        "Sure, I can provide details on various subjects. What would you like to learn more about?",
+                        "I'm ready to share information. What specific topic are you inquiring about?"],
+                        "context": [""]
+                },
+                {
+                        "tag": "Normal_",
+                        "patterns": ["How's your day?",
+                        "What's new with you?",
+                        "Tell me something interesting",
+                        "How's the weather today?",
+                        "What's your favorite color?",
+                        "What do you like to do for fun?"],
+                        "responses": ["I'm just a chatbot, so I don't have feelings, but I'm here to chat with you!",
+                        "I don't experience days or weather, but I'm always ready to have a conversation.",
+                        "Sure, let's chat! Did you know that the world's largest desert is Antarctica?",
+                        "I'm here to assist you and have a fun conversation! What's on your mind?"],
+                        "context": [""]
+                },
+                {
+                        "tag": "swear",
+                        "patterns": [
+                        "fuck",
+                        "bitch",
+                        "shut up",
+                        "hell",
+                        "stupid",
+                        "idiot",
+                        "dumb ass",
+                        "asshole",
+                        "fucker"
+                        ],
+                        "responses": [
+                        "please use appropriate language",
+                        "Maintaining decency would be appreciated"],
+                        "context_set": ""
+               },
+               {
+                        "tag": "age",
+                        "patterns": ["how old are you",
+                        "when were you made",
+                        "what is your age",
+                        "birthdate",
+                        "creation date",
+                        "when were you created",
+                        "how long have you existed"],
+                        "responses": ["I was created in 2023, so I'm 23 years old.",
+                        "I came to life in 2023, so I'm 23 years old in the digital realm.",
+                        "My virtual birthdate is in 2023, so I'm 1 years old.",
+                        "I was made in the year 2023, so I'm 1 years old.",
+                        "I'm a product of 2023, so I'm 1 years old by AI standards."],
+                        "context": [""]
+                },
+                {
+                        "tag": "hobbies",
+                        "patterns": [
+                        "What are your hobbies?",
+                        "Tell me about your interests",
+                        "Do you have any hobbies?",
+                        "What do you do for fun?"],
+                        "responses": [
+                        "I don't have hobbies, but I'm here to assist you with information and questions.",
+                        "I'm a chatbot, so I don't have hobbies or interests, but I can help you with yours!",
+                        "I'm just a computer program, so I don't have hobbies, but I'm here to provide information and support.",
+                        "I don't have personal interests, but I'm here to cater to your needs and answer your questions.",
+                        "I don't have hobbies, but I'm here to engage in conversations and assist you. What are your hobbies?"]
+                },
+                {
+                        "tag": "favorites",
+                        "patterns": [
+                          "What are your favorites?",
+                          "Tell me your preferences",
+                          "What do you like?",
+                          "Your favorite color?"],
+                        "responses": [
+                          "I don't have personal preferences or favorites as I'm a machine, but I'm here to help you with yours.",
+                          "I don't have personal likes or dislikes, but I can assist you with information or recommendations.",
+                          "I'm just a machine, so I don't have favorites, but I'm here to assist you with your questions and preferences.",
+                          "I don't have personal preferences like humans, but I'm here to cater to your needs and interests.",
+                          "I don't have favorites, but I can certainly help you find yours. What are you interested in?"]
+                },
+                {
+                        "tag": "create_simple_bot_program",
+                        "patterns": [
+                          "Write a program for a simple chatbot",
+                          "How do I create a basic chatbot in Python?",
+                          "Can you help me code a simple chatbot?",
+                          "Provide a Python program for a basic chatbot"],
+                        "responses": [
+                          "Sure, here's a simple Python program for a basic chatbot:\n\n```python\nimport random\n\nresponses = {\n    'hi': 'Hello!',\n    'how are you?': 'I'm just a chatbot, but I'm doing well. How can I assist you?',\n    'bye': 'Goodbye! Have a great day.'\n}\n\ndef chatbot_response(user_input):\n    user_input = user_input.lower()\n    response = responses.get(user_input, 'I'm not sure how to respond to that.')\n    return response\n\nwhile True:\n    user_input = input('You: ')\n    if user_input.lower() == 'quit':\n        print('Chatbot: Goodbye!')\n        break\n    response = chatbot_response(user_input)\n    print('Chatbot:', response)\n```\n\nThis program defines a simple chatbot that responds to a few predefined user inputs. You can customize it to include more responses and interactions."]
+                },
+                {
+                        "tag": "simple_calculator_program",
+                        "patterns": [
+                          "Write a program for a simple calculator",
+                          "I need a Python calculator program",
+                          "Create a basic calculator in Python"],
+                        "responses": [
+                          "Sure, here's a simple Python program for a basic calculator:\n\n```python\n# Define the add function\ndef add(x, y):\n    return x + y\n\n# Define the subtract function\ndef subtract(x, y):\n    return x - y\n\n# Define the multiply function\ndef multiply(x, y):\n    return x * y\n\n# Define the divide function\ndef divide(x, y):\n    if y == 0:\n        return 'Cannot divide by zero'\n    return x / y\n\n# User input\nnum1 = float(input('Enter the first number: '))\nnum2 = float(input('Enter the second number: '))\n\nprint('Select operation:')\nprint('1. Add')\nprint('2. Subtract')\nprint('3. Multiply')\nprint('4. Divide')\n\nchoice = input('Enter choice (1/2/3/4): ')\n\nif choice == '1':\n    print('Result:', add(num1, num2))\nelif choice == '2':\n    print('Result:', subtract(num1, num2))\nelif choice == '3':\n    print('Result:', multiply(num1, num2))\nelif choice == '4':\n    print('Result:', divide(num1, num2))\nelse:\n    print('Invalid choice')\n```\n\nThis program lets you perform basic arithmetic operations like addition, subtraction, multiplication, and division."]
+                },
+                {
+                        "tag": "factorial_program",
+                        "patterns": [
+                          "Give me a Python program to calculate factorial",
+                          "How can I find the factorial of a number in Python?",
+                          "Factorial calculation program in Python"
+                        ],
+                        "responses": [
+                          "Certainly! Here's a Python program to calculate the factorial of a number:\n\n```python\n# Function to calculate factorial\n\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n\n# User input\nnum = int(input('Enter a number: '))\n\n# Calculate factorial\nif num < 0:\n    print('Factorial is undefined for negative numbers.')\nelse:\n    print('Factorial of', num, 'is', factorial(num))\n```\n\nThis program calculates the factorial of a non-negative integer input by the user."
+                        ]
+                },
+                {
+                        "tag": "even_odd_program",
+                        "patterns": [
+                          "Provide a Python program to check if a number is even or odd",
+                          "How can I determine if a number is even or odd in Python?",
+                          "Even or odd number checker in Python"
+                        ],
+                        "responses": [
+                          "Here's a Python program to check if a number is even or odd:\n\n```python\n# User input\nnum = int(input('Enter a number: '))\n\n# Check if the number is even or odd\nif num % 2 == 0:\n    print(num, 'is even.')\nelse:\n    print(num, 'is odd.')\n```\n\nThis program takes an integer input and determines if it's even or odd."
+                        ]
+                },
+                {
+                        "tag": "fibonacci_program",
+                        "patterns": [
+                          "Write a Python program to generate the Fibonacci series",
+                          "How can I create a Fibonacci sequence in Python?",
+                          "Fibonacci series generator in Python"
+                        ],
+                        "responses": [
+                          "Here's a Python program to generate the Fibonacci series up to a specified number of terms:\n\n```python\n# User input\nnum_terms = int(input('Enter the number of terms: '))\n\n# Initialize the first two terms\nfirst_term, second_term = 0, 1\n\n# Generate the Fibonacci series\nfibonacci_series = [first_term, second_term]\nfor _ in range(2, num_terms):\n    next_term = first_term + second_term\n    fibonacci_series.append(next_term)\n    first_term, second_term = second_term, next_term\n\nprint('Fibonacci series:', fibonacci_series)\n```\n\nThis program generates the Fibonacci sequence with the specified number of terms."
+                        ]
+                },
+                {
+                        "tag": "sum_of_natural_numbers_program",
+                        "patterns": [
+                          "Give me a Python program to calculate the sum of natural numbers",
+                          "How can I find the sum of natural numbers in Python?",
+                          "Natural number sum program in Python"],
+                        "responses": [
+                          "Here's a Python program to calculate the sum of natural numbers up to a given limit:\n\n```python\n# User input\nlimit = int(input('Enter a positive integer: '))\n\n# Calculate the sum of natural numbers\nsum_of_naturals = sum(range(1, limit+1))\n\nprint('The sum of natural numbers up to', limit, 'is', sum_of_naturals)\n```\n\nThis program calculates the sum of natural numbers up to the specified positive integer."]
+                },
+                {
+                        "tag": "palindrome_program",
+                        "patterns": [
+                          "Give me a Python program to check if a string is a palindrome",
+                          "How can I determine if a string is a palindrome in Python?",
+                          "String palindrome checker in Python"],
+                        "responses": [
+                          "Here's a Python program to check if a string is a palindrome:\n\n```python\n# User input\ntext = input('Enter a string: ')\n\n# Remove spaces and convert to lowercase\ntext = text.replace(' ', '').lower()\n\n# Check if the string is a palindrome\nif text == text[::-1]:\n    print('The string is a palindrome.')\nelse:\n    print('The string is not a palindrome.')\n```\n\nThis program checks if the input string is a palindrome (reads the same forwards and backwards) after removing spaces and converting to lowercase."]
+                },
+                {
+                        "tag": "celsius_to_fahrenheit_program",
+                        "patterns": [
+                          "Write a Python program to convert Celsius to Fahrenheit",
+                          "How can I perform a temperature conversion in Python?",
+                          "Celsius to Fahrenheit conversion program in Python"],
+                        "responses": [
+                          "Here's a Python program to convert temperatures from Celsius to Fahrenheit:\n\n```python\n# User input\ncelsius = float(input('Enter temperature in Celsius: '))\n\n# Conversion formula\nfahrenheit = (celsius * 9/5) + 32\n\nprint('Temperature in Fahrenheit:', fahrenheit)\n```\n\nThis program takes a temperature in Celsius and converts it to Fahrenheit using the conversion formula."]
+                },
+                {
+                        "tag": "circle_area_program",
+                        "patterns": [
+                          "Provide a Python program to calculate the area of a circle",
+                          "How can I find the area of a circle in Python?",
+                          "Circle area calculation program in Python"],
+                        "responses": [
+                          "Here's a Python program to calculate the area of a circle:\n\n```python\n# Import the math module\nimport math\n\n# User input\nradius = float(input('Enter the radius of the circle: '))\n\n# Calculate the area\narea = math.pi * (radius ** 2)\n\nprint('The area of the circle is', area)\n```\n\nThis program calculates the area of a circle using the formula πr²."]
+                },
+                {
+                        "tag": "lcm_program",
+                        "patterns": [
+                          "Give me a Python program to find the LCM of two numbers",
+                          "How can I calculate the LCM in Python?",
+                          "LCM calculation program in Python"],
+                        "responses": [
+                          "Here's a Python program to find the Least Common Multiple (LCM) of two numbers:\n\n```python\n# Function to calculate LCM\n\ndef calculate_lcm(x, y):\n    # Find the greater number\n    if x > y:\n        greater = x\n    else:\n        greater = y\n\n    while True:\n        if greater % x == 0 and greater % y == 0:\n            lcm = greater\n            break\n        greater += 1\n\n    return lcm\n\n# User input\nnum1 = int(input('Enter the first number: '))\nnum2 = int(input('Enter the second number: '))\n\n# Calculate the LCM\nlcm = calculate_lcm(num1, num2)\n\nprint('The LCM of', num1, 'and', num2, 'is', lcm)\n```\n\nThis program calculates the Least Common Multiple of two input numbers."
+                        ]
+                },
+                {
+                        "tag": "string_reverse_program",
+                        "patterns": [
+                          "Provide a Python program to reverse a string",
+                          "How can I reverse a string in Python?",
+                          "String reversal program in Python"
+                        ],
+                        "responses": [
+                          "Here's a Python program to reverse a string:\n\n```python\n# User input\ntext = input('Enter a string: ')\n\n# Reverse the string\nreversed_text = text[::-1]\n\nprint('Reversed string:', reversed_text)\n```\n\nThis program takes a string as input and reverses it."
+                        ]
+                },
+                {
+                        "tag": "triangle_area_program",
+                        "patterns": [
+                          "Write a Python program to calculate the area of a triangle",
+                          "How can I find the area of a triangle in Python?",
+                          "Triangle area calculation program in Python"
+                        ],
+                        "responses": [
+                          "Here's a Python program to calculate the area of a triangle using its base and height:\n\n```python\n# User input\nbase = float(input('Enter the base of the triangle: '))\nheight = float(input('Enter the height of the triangle: '))\n\n# Calculate the area of the triangle\narea = 0.5 * base * height\n\nprint('The area of the triangle is', area)\n```\n\nThis program calculates the area of a triangle using the formula 0.5 * base * height."
+                        ]
+                },
+                {
+                        "tag": "word_count_program",
+                        "patterns": [
+                          "Give me a Python program to count words in a sentence",
+                          "How can I count the number of words in Python?",
+                          "Word count program in Python"
+                        ],
+                        "responses": [
+                          "Here's a Python program to count the number of words in a sentence:\n\n```python\n# User input\nsentence = input('Enter a sentence: ')\n\n# Split the sentence into words\nwords = sentence.split()\n\n# Count the number of words\nword_count = len(words)\n\nprint('Number of words in the sentence:', word_count)\n```\n\nThis program counts the words in a sentence entered by the user."
+                        ]
+                },
+                {
+                        "tag": "prime_number_check_program",
+                        "patterns": [
+                          "Give me a Python program to check for prime numbers",
+                          "How can I determine if a number is prime in Python?",
+                          "Prime number checker program in Python"
+                        ],
+                        "responses": [
+                          "Here's a Python program to check if a number is prime:\n\n```python\n# User input\nnum = int(input('Enter a number: '))\n\n# Check if the number is prime\nis_prime = True\nif num <= 1:\n    is_prime = False\nelse:\n    for i in range(2, int(num**0.5) + 1):\n        if num % i == 0:\n            is_prime = False\n            break\n\nif is_prime:\n    print(num, 'is a prime number.')\nelse:\n    print(num, 'is not a prime number.')\n```\n\nThis program checks if the input number is a prime number."
+                        ]
+                },
+                {
+                        "tag": "random_password_program",
+                        "patterns": [
+                          "Provide a Python program to generate a random password",
+                          "How can I create a random password in Python?",
+                          "Random password generator program in Python"
+                        ],
+                        "responses": [
+                          "Here's a Python program to generate a random password:\n\n```python\n# Import the random module\nimport random\nimport string\n\n# Set the password length\npassword_length = 12\n\n# Generate a random password\npassword = ''.join(random.choice(string.ascii_letters + string.digits + string.punctuation) for _ in range(password_length))\n\nprint('Random password:', password)\n```\n\nThis program generates a random password of the specified length."
+                        ]
+                },
+                {
+                        "tag": "binary_search_code",
+                        "patterns": [
+                          "Provide a Python code example for binary search",
+                          "How can I implement binary search in Python?",
+                          "Binary search algorithm code in Python"
+                        ],
+                        "responses": [
+                          "Here's a Python code example for binary search:\n\n```python\n# Binary search function\n\ndef binary_search(arr, target):\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = left + (right - left) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1  # Target not found\n\n# Usage\narr = [2, 3, 4, 10, 40]\ntarget = 10\nresult = binary_search(arr, target)\nif result != -1:\n    print('Element found at index', result)\nelse:\n    print('Element not found')\n```\n\nThis code demonstrates the binary search algorithm in Python."
+                        ]
+                },
+                {
+                        "tag": "quick_sort_code",
+                        "patterns": [
+                          "Provide a Python code example for quick sort",
+                          "How can I implement quick sort in Python?",
+                          "Quick sort algorithm code in Python"
+                        ],
+                        "responses": [
+                          "Here's a Python code example for quick sort:\n\n```python\n# Quick sort function\n\ndef quick_sort(arr):\n    if len(arr) <= 1:\n        return arr\n    pivot = arr[len(arr) // 2]\n    left = [x for x in arr if x < pivot]\n    middle = [x for x in arr if x == pivot]\n    right = [x for x in arr if x > pivot]\n    return quick_sort(left) + middle + quick_sort(right)\n\n# Usage\narr = [3, 6, 8, 10, 1, 2, 1]\nsorted_arr = quick_sort(arr)\nprint('Sorted array:', sorted_arr)\n```\n\nThis code demonstrates the quick sort algorithm in Python."
+                        ]
+                },
+                {
+                        "tag": "linked_list_insertion_code",
+                        "patterns": [
+                          "Provide a Python code example for linked list insertion",
+                          "How can I implement linked list insertion in Python?",
+                          "Linked list insertion code in Python"
+                        ],
+                        "responses": [
+                          "Here's a Python code example for linked list insertion:\n\n```python\n# Node class\n\nclass Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None\n\n# Linked list class\n\nclass LinkedList:\n    def __init__(self):\n        self.head = None\n\n    def insert(self, data):\n        new_node = Node(data)\n        new_node.next = self.head\n        self.head = new_node\n\n# Usage\nlinked_list = LinkedList()\nlinked_list.insert(3)\nlinked_list.insert(5)\nlinked_list.insert(7)\n```\n\nThis code demonstrates linked list insertion in Python."
+                        ]
+                },
+                {
+                        "tag": "merge_sort_code",
+                        "patterns": [
+                          "Provide a Python code example for merge sort",
+                          "How can I implement merge sort in Python?",
+                          "Merge sort algorithm code in Python"
+                        ],
+                        "responses": [
+                          "Here's a Python code example for merge sort:\n\n```python\n# Merge sort function\n\ndef merge_sort(arr):\n    if len(arr) > 1:\n        mid = len(arr) // 2\n        left_half = arr[:mid]\n        right_half = arr[mid:]\n\n        merge_sort(left_half)\n        merge_sort(right_half)\n\n        i = j = k = 0\n\n        while i < len(left_half) and j < len(right_half):\n            if left_half[i] < right_half[j]:\n                arr[k] = left_half[i]\n                i += 1\n            else:\n                arr[k] = right_half[j]\n                j += 1\n            k += 1\n\n        while i < len(left_half):\n            arr[k] = left_half[i]\n            i += 1\n            k += 1\n\n        while j < len(right_half):\n            arr[k] = right_half[j]\n            j += 1\n            k += 1\n\n# Usage\narr = [38, 27, 43, 3, 9, 82, 10]\nmerge_sort(arr)\nprint('Sorted array:', arr)\n```\n\nThis code demonstrates the merge sort algorithm in Python."
+                        ]
+                },
+                {
+                        "tag": "bfs_code",
+                        "patterns": [
+                          "Provide a Python code example for breadth-first search (BFS)",
+                          "How can I perform BFS on a graph in Python?",
+                          "BFS algorithm code in Python"
+                        ],
+                        "responses": [
+                          "Here's a Python code example for breadth-first search (BFS) on a graph:\n\n```python\nfrom collections import deque\n\n# Graph class using adjacency list\n\nclass Graph:\n    def __init__(self, vertices):\n        self.vertices = vertices\n        self.graph = {i: [] for i in range(vertices)}\n\n    def add_edge(self, u, v):\n        self.graph[u].append(v)\n\n    def bfs(self, start_vertex):\n        visited = [False] * self.vertices\n        queue = deque()\n        queue.append(start_vertex)\n        visited[start_vertex] = True\n        while queue:\n            current_vertex = queue.popleft()\n            print(current_vertex, end=' ')\n            for neighbor in self.graph[current_vertex]:\n                if not visited[neighbor]:\n                    queue.append(neighbor)\n                    visited[neighbor] = True\n\n# Usage\ngraph = Graph(5)\ngraph.add_edge(0, 1)\ngraph.add_edge(0, 2)\ngraph.add_edge(1, 3)\ngraph.add_edge(2, 4)\nprint('BFS starting from vertex 0:')\ngraph.bfs(0)\n```\n\nThis code demonstrates breadth-first search (BFS) on a graph in Python."
+                        ]
+                },
+                {
+                        "tag": "bfs_code",
+                        "patterns": [
+                          "Provide a Python code example for breadth-first search (BFS)",
+                          "How can I perform BFS on a graph in Python?",
+                          "BFS algorithm code in Python"
+                        ],
+                        "responses": [
+                          "Here's a Python code example for breadth-first search (BFS) on a graph:\n\n```python\nfrom collections import deque\n\n# Graph class using adjacency list\n\nclass Graph:\n    def __init__(self, vertices):\n        self.vertices = vertices\n        self.graph = {i: [] for i in range(vertices)}\n\n    def add_edge(self, u, v):\n        self.graph[u].append(v)\n\n    def bfs(self, start_vertex):\n        visited = [False] * self.vertices\n        queue = deque()\n        queue.append(start_vertex)\n        visited[start_vertex] = True\n        while queue:\n            current_vertex = queue.popleft()\n            print(current_vertex, end=' ')\n            for neighbor in self.graph[current_vertex]:\n                if not visited[neighbor]:\n                    queue.append(neighbor)\n                    visited[neighbor] = True\n\n# Usage\ngraph = Graph(5)\ngraph.add_edge(0, 1)\ngraph.add_edge(0, 2)\ngraph.add_edge(1, 3)\ngraph.add_edge(2, 4)\nprint('BFS starting from vertex 0:')\ngraph.bfs(0)\n```\n\nThis code demonstrates breadth-first search (BFS) on a graph in Python."
+                        ]
+                },
+                {
+                        "tag": "dfs_binary_tree_code",
+                        "patterns": [
+                          "Provide a Python code example for DFS in a binary tree",
+                          "How can I perform DFS on a binary tree in Python?",
+                          "DFS algorithm for binary tree in Python"
+                        ],
+                        "responses": [
+                          "Here's a Python code example for depth-first search (DFS) on a binary tree:\n\n```python\n# Binary tree node class\n\nclass TreeNode:\n    def __init__(self, data):\n        self.data = data\n        self.left = None\n        self.right = None\n\n# DFS function for binary tree\n\ndef dfs_binary_tree(node):\n    if node is not None:\n        print(node.data, end=' ')\n        dfs_binary_tree(node.left)\n        dfs_binary_tree(node.right)\n\n# Usage\nroot = TreeNode(1)\nroot.left = TreeNode(2)\nroot.right = TreeNode(3)\nroot.left.left = TreeNode(4)\nroot.left.right = TreeNode(5)\nprint('DFS on binary tree:')\ndfs_binary_tree(root)\n```\n\nThis code demonstrates depth-first search (DFS) on a binary tree in Python."
+                        ]
+                },
+                {
+                        "tag": "bfs_binary_tree_code",
+                        "patterns": [
+                          "Provide a Python code example for BFS in a binary tree",
+                          "How can I perform BFS on a binary tree in Python?",
+                          "BFS algorithm for binary tree in Python"
+                        ],
+                        "responses": [
+                          "Here's a Python code example for breadth-first search (BFS) on a binary tree:\n\n```python\nfrom collections import deque\n\n# Binary tree node class\n\nclass TreeNode:\n    def __init__(self, data):\n        self.data = data\n        self.left = None\n        self.right = None\n\n# BFS function for binary tree\n\ndef bfs_binary_tree(root):\n    if not root:\n        return\n    queue = deque([root])\n    while queue:\n        node = queue.popleft()\n        print(node.data, end=' ')\n        if node.left:\n            queue.append(node.left)\n        if node.right:\n            queue.append(node.right)\n\n# Usage\nroot = TreeNode(1)\nroot.left = TreeNode(2)\nroot.right = TreeNode(3)\nroot.left.left = TreeNode(4)\nroot.left.right = TreeNode(5)\nprint('BFS on binary tree:')\nbfs_binary_tree(root)\n```\n\nThis code demonstrates breadth-first search (BFS) on a binary tree in Python."
+                        ]
+                },
+                {
+                        "tag": "binary_tree_traversal_code",
+                        "patterns": [
+                          "Provide Python code examples for binary tree traversals",
+                          "How can I perform binary tree traversals in Python?",
+                          "Binary tree traversal code in Python"
+                        ],
+                        "responses": [
+                          "Here's Python code for performing inorder, preorder, and postorder traversals on a binary tree:\n\n```python\n# Binary tree node class\n\nclass TreeNode:\n    def __init__(self, data):\n        self.data = data\n        self.left = None\n        self.right = None\n\n# Inorder traversal function\n\ndef inorder_traversal(node):\n    if node is not None:\n        inorder_traversal(node.left)\n        print(node.data, end=' ')\n        inorder_traversal(node.right)\n\n# Preorder traversal function\n\ndef preorder_traversal(node):\n    if node is not None:\n        print(node.data, end=' ')\n        preorder_traversal(node.left)\n        preorder_traversal(node.right)\n\n# Postorder traversal function\n\ndef postorder_traversal(node):\n    if node is not None:\n        postorder_traversal(node.left)\n        postorder_traversal(node.right)\n        print(node.data, end=' ')\n\n# Usage\nroot = TreeNode(1)\nroot.left = TreeNode(2)\nroot.right = TreeNode(3)\nroot.left.left = TreeNode(4)\nroot.left.right = TreeNode(5)\nprint('Inorder traversal:')\ninorder_traversal(root)\nprint('\nPreorder traversal:')\npreorder_traversal(root)\nprint('\nPostorder traversal:')\npostorder_traversal(root)\n```\n\nThis code provides Python functions for inorder, preorder, and postorder binary tree traversals."
+                        ]
+                },
+                {
+                        "tag": "dijkstras_algorithm_code",
+                        "patterns": [
+                          "Provide a Python code example for Dijkstra's algorithm",
+                          "How can I implement Dijkstra's algorithm in Python?",
+                          "Dijkstra's algorithm code in Python"
+                        ],
+                        "responses": [
+                          "Here's a Python code example for Dijkstra's algorithm to find the shortest path in a weighted graph:\n\n```python\nimport heapq\n\n# Function for Dijkstra's algorithm\n\ndef dijkstra(graph, start_vertex):\n    distances = {vertex: float('infinity') for vertex in graph}\n    distances[start_vertex] = 0\n    priority_queue = [(0, start_vertex)]\n    while priority_queue:\n        current_distance, current_vertex = heapq.heappop(priority_queue)\n        if current_distance > distances[current_vertex]:\n            continue\n        for neighbor, weight in graph[current_vertex].items():\n            distance = current_distance + weight\n            if distance < distances[neighbor]:\n                distances[neighbor] = distance\n                heapq.heappush(priority_queue, (distance, neighbor))\n    return distances\n\n# Usage\ngraph = {\n    'A': {'B': 1, 'C': 4},\n    'B': {'A': 1, 'C': 2, 'D': 5},\n    'C': {'A': 4, 'B': 2, 'D': 1},\n    'D': {'B': 5, 'C': 1}\n}\nstart_vertex = 'A'\nshortest_distances = dijkstra(graph, start_vertex)\nprint('Shortest distances from', start_vertex + ':', shortest_distances)\n```\n\nThis code demonstrates Dijkstra's algorithm for finding the shortest path in a weighted graph."
+                        ]
+                },
+                {
+                        "tag": "dfs_grid_code",
+                        "patterns": [
+                          "Provide a Python code example for DFS in a grid/maze",
+                          "How can I perform DFS on a grid in Python?",
+                          "DFS algorithm for grid/maze in Python"
+                        ],
+                        "responses": [
+                          "Here's a Python code example for depth-first search (DFS) in a grid/maze:\n\n```python\n# Function for DFS on a grid/maze\n\ndef dfs_grid(grid, row, col, visited):\n    rows, cols = len(grid), len(grid[0])\n    if row < 0 or row >= rows or col < 0 or col >= cols or grid[row][col] == 'X' or visited[row][col]:\n        return\n    visited[row][col] = True\n    print('Visited cell at ({}, {})'.format(row, col))\n    dfs_grid(grid, row + 1, col, visited)\n    dfs_grid(grid, row - 1, col, visited)\n    dfs_grid(grid, row, col + 1, visited)\n    dfs_grid(grid, row, col - 1, visited)\n\n# Usage\ngrid = [\n    ['.', '.', '.', 'X'],\n    ['.', 'X', '.', 'X'],\n    ['.', '.', '.', '.'],\n]\nvisited = [[False] * len(grid[0]) for _ in range(len(grid))]\nstart_row, start_col = 0, 0\nprint('DFS on grid/maze:')\ndfs_grid(grid, start_row, start_col, visited)\n```\n\nThis code demonstrates depth-first search (DFS) in a grid/maze using recursion."
+                        ]
+                },
+                {
+                        "tag": "bfs_grid_code",
+                        "patterns": [
+                          "Provide a Python code example for BFS in a grid/maze",
+                          "How can I perform BFS on a grid in Python?",
+                          "BFS algorithm for grid/maze in Python"
+                        ],
+                        "responses": [
+                          "Here's a Python code example for breadth-first search (BFS) in a grid/maze:\n\n```python\nfrom collections import deque\n\n# Function for BFS on a grid/maze\n\ndef bfs_grid(grid, start_row, start_col):\n    rows, cols = len(grid), len(grid[0])\n    visited = [[False] * cols for _ in range(rows)]\n    queue = deque([(start_row, start_col)])\n    while queue:\n        row, col = queue.popleft()\n        if row < 0 or row >= rows or col < 0 or col >= cols or grid[row][col] == 'X' or visited[row][col]:\n            continue\n        visited[row][col] = True\n        print('Visited cell at ({}, {})'.format(row, col))\n        queue.append((row + 1, col))\n        queue.append((row - 1, col))\n        queue.append((row, col + 1))\n        queue.append((row, col - 1))\n\n# Usage\ngrid = [\n    ['.', '.', '.', 'X'],\n    ['.', 'X', '.', 'X'],\n    ['.', '.', '.', '.'],\n]\nstart_row, start_col = 0, 0\nprint('BFS on grid/maze:')\nbfs_grid(grid, start_row, start_col)\n```\n\nThis code demonstrates breadth-first search (BFS) in a grid/maze using a queue."
+                        ]
+                },
+                {
+                        "tag": "knapsack_problem_code",
+                        "patterns": [
+                          "Provide a Python code example for the Knapsack problem",
+                          "How can I solve the Knapsack problem using dynamic programming in Python?",
+                          "Knapsack problem code in Python"
+                        ],
+                        "responses": [
+                          "Here's a Python code example for solving the Knapsack problem using dynamic programming:\n\n```python\n# Function for solving the Knapsack problem\n\ndef knapsack(items, capacity):\n    n = len(items)\n    dp = [[0] * (capacity + 1) for _ in range(n + 1)]\n    for i in range(1, n + 1):\n        for w in range(1, capacity + 1):\n            if items[i - 1][1] <= w:\n                dp[i][w] = max(dp[i - 1][w], items[i - 1][0] + dp[i - 1][w - items[i - 1][1]])\n            else:\n                dp[i][w] = dp[i - 1][w]\n    return dp[n][capacity]\n\n# Usage\nitems = [(60, 10), (100, 20), (120, 30)]\ncapacity = 50\nmax_value = knapsack(items, capacity)\nprint('Maximum value for the Knapsack problem:', max_value)\n```\n\nThis code demonstrates solving the Knapsack problem using dynamic programming in Python."
+                        ]
+                },
+                {
+                        "tag": "python_programming",
+                        "patterns": [
+                            "Tell me about Python programming",
+                            "What is Python used for?",
+                            "Explain Python"
+                        ],
+                        "responses": [
+                            "Python is a high-level, versatile, and interpreted programming language known for its simplicity and readability. It is widely used in web development, data science, artificial intelligence, automation, and more. Python's syntax makes it easy to learn and use, and it has a large standard library and a vibrant community of developers.",
+                            "Python is an interpreted, general-purpose programming language. It's known for its ease of use, clear and concise syntax, and a wide range of libraries and frameworks. Python is used in web development, data analysis, scientific computing, artificial intelligence, and more.",
+                            "Python is a popular, high-level programming language known for its readability and versatility. It's used in various domains, such as web development (Django, Flask), data analysis (Pandas, NumPy), and artificial intelligence (TensorFlow, PyTorch). Python's simplicity and rich ecosystem make it a top choice for many developers."
+                        ]
+                },
+                {
+                        "tag": "machine_learning",
+                        "patterns": [
+                            "What is machine learning?",
+                            "Explain machine learning in simple terms",
+                            "Tell me about the applications of machine learning"
+                        ],
+                        "responses": [
+                            "Machine learning is a subset of artificial intelligence (AI) that focuses on developing algorithms and models that enable computers to learn and make predictions or decisions based on data. It is used in applications like image recognition, recommendation systems, natural language processing, and autonomous vehicles.",
+                            "Machine learning is a branch of artificial intelligence (AI) that empowers computers to learn from data and make predictions or decisions without explicit programming. It finds applications in fields like healthcare, finance, marketing, and more.",
+                            "Machine learning is a subset of artificial intelligence (AI) that deals with the development of algorithms and models that allow computers to learn from data and make predictions or decisions. It's used in diverse applications, including fraud detection, language translation, and self-driving cars."
+                        ]
+                },
+                {
+                        "tag": "artificial_intelligence",
+                        "patterns": [
+                            "What is artificial intelligence?",
+                            "Explain AI in simple terms",
+                            "Tell me about AI applications"
+                        ],
+                        "responses": [
+                            "Artificial intelligence (AI) is a branch of computer science that aims to create intelligent machines capable of simulating human-like thinking and decision-making processes. AI applications include virtual assistants, self-driving cars, medical diagnosis, and game-playing programs like chess and Go.",
+                            "Artificial intelligence (AI) involves creating computer systems that can perform tasks typically requiring human intelligence, such as problem-solving and learning. AI applications are diverse, from natural language processing in chatbots to computer vision in autonomous vehicles.",
+                            "Artificial intelligence (AI) is the field of computer science focused on developing systems that can perform tasks requiring human-like intelligence. AI applications range from voice assistants like Siri to complex tasks like facial recognition and autonomous robots."
+                        ]
+                },
+                {
+                        "tag": "cybersecurity",
+                        "patterns": [
+                            "What is cybersecurity?",
+                            "Explain the importance of cybersecurity",
+                            "Tell me about common cybersecurity threats"
+                        ],
+                        "responses": [
+                            "Cybersecurity involves the protection of computer systems, networks, and data from theft, damage, or unauthorized access. It is crucial in the digital age to safeguard sensitive information. Common threats include malware, phishing, hacking, and data breaches.",
+                            "Cybersecurity is the practice of safeguarding computer systems and data from theft, damage, or unauthorized access. It is essential to protect against threats like malware, ransomware, social engineering attacks, and data breaches.",
+                            "Cybersecurity is the discipline of protecting digital systems and data from malicious activities. Common threats include viruses, ransomware, denial-of-service attacks, and identity theft."
+                        ]
+                },
+                {
+                        "tag": "cloud_computing",
+                        "patterns": [
+                            "What is cloud computing?",
+                            "Explain the advantages of cloud computing",
+                            "Tell me about cloud service providers"
+                        ],
+                        "responses": [
+                            "Cloud computing is the delivery of computing services, including servers, storage, databases, networking, and more, over the internet. It offers benefits such as scalability, cost-efficiency, and accessibility. Prominent cloud service providers include Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP).",
+                            "Cloud computing provides on-demand access to computing resources over the internet. Its advantages include scalability, cost-effectiveness, and disaster recovery. Leading cloud service providers include AWS, Azure, and Google Cloud.",
+                            "Cloud computing is the delivery of computing services over the internet, offering advantages like flexibility, scalability, and reduced IT costs. Notable cloud service providers include Amazon Web Services (AWS), Microsoft Azure, and IBM Cloud."
+                        ]
+                },
+                {
+                        "tag": "virtual_reality",
+                        "patterns": [
+                          "What is Virtual Reality (VR)?",
+                          "Explain VR in simple terms",
+                          "Tell me about VR applications"
+                        ],
+                        "responses": [
+                          "Virtual Reality (VR) is a technology that immerses users in a computer-generated, three-dimensional environment. It typically involves the use of headsets and controllers to create an interactive and immersive experience. VR has applications in gaming, education, and simulations.",
+                          "VR is a technology that transports users to computer-generated, 3D environments. Users wear VR headsets and often use hand controllers to interact with the virtual world. VR is used in gaming, training, medical simulations, and more.",
+                          "Virtual Reality (VR) is a technology that simulates a 3D, computer-generated environment for users. VR headsets and controllers provide an immersive experience. VR finds applications in gaming, architectural design, and therapeutic treatments."
+                        ]
+                },                      
+                {
+                        "tag": "iot",
+                        "patterns": [
+                          "What is the Internet of Things (IoT)?",
+                          "Explain IoT in simple terms",
+                          "Tell me about IoT applications"
+                        ],
+                        "responses": [
+                          "The Internet of Things (IoT) refers to the network of interconnected physical objects and devices that can collect and exchange data over the internet. These objects, such as smart appliances and wearable devices, can communicate and perform tasks independently or in coordination with each other.",
+                          "IoT is a network of physical objects, devices, vehicles, and buildings embedded with sensors and software to collect and exchange data. IoT applications include smart homes, healthcare monitoring, and industrial automation.",
+                          "IoT is a system of interconnected physical objects equipped with sensors and technology to communicate and exchange data. IoT applications span various sectors, from smart cities and agriculture to healthcare and transportation."
+                        ]
+                },
+                {
+                        "tag": "augmented_reality",
+                        "patterns": [
+                          "What is Augmented Reality (AR)?",
+                          "Explain AR in simple terms",
+                          "Tell me about AR applications"
+                        ],
+                        "responses": [
+                          "Augmented Reality (AR) is a technology that overlays digital information, such as graphics and data, onto the real world. AR is often experienced through smartphone apps and AR glasses. Applications include gaming, navigation, and education.",
+                          "AR enhances the real world with digital information and objects. It is commonly experienced through smartphone apps and AR glasses. AR applications range from gaming and marketing to medical training and navigation.",
+                          "Augmented Reality (AR) overlays digital content onto the real world, enhancing the user's perception. AR is used in applications like mobile gaming, interactive advertising, and remote technical support."
+                        ]
+                },
+                {
+                        "tag": "big_data",
+                        "patterns": [
+                          "What is Big Data?",
+                          "Explain Big Data in simple terms",
+                          "Tell me about Big Data applications"
+                        ],
+                        "responses": [
+                          "Big Data refers to the massive volume of structured and unstructured data generated by various sources. Analyzing and extracting insights from Big Data can lead to valuable business and scientific discoveries. Big Data applications include data analytics, predictive modeling, and personalized marketing.",
+                          "Big Data is the vast and complex data generated from sources like social media, sensors, and online transactions. It's characterized by the three Vs: volume, velocity, and variety. Big Data applications include real-time analytics, fraud detection, and healthcare analytics.",
+                          "Big Data encompasses the enormous and diverse data generated by digital activities. It presents opportunities for data-driven decision-making in areas like finance, healthcare, and e-commerce. Big Data applications include customer behavior analysis and supply chain optimization."
+                        ]
+                },
+                {
+                        "tag": "robotics",
+                        "patterns": [
+                          "What is robotics?",
+                          "Explain robotics in simple terms",
+                          "Tell me about robotics applications"
+                        ],
+                        "responses": [
+                          "Robotics is the field of designing, constructing, and operating robots. Robots are machines that can carry out tasks autonomously or semi-autonomously. Robotics applications include manufacturing, healthcare, and space exploration.",
+                          "Robotics involves the creation and operation of robots, which are programmable machines capable of performing tasks. Robotics applications range from industrial automation and surgical robots to autonomous vehicles and space exploration.",
+                          "Robotics is the study of designing and controlling robots, which are mechanical devices programmed to perform tasks. Robotics has applications in fields such as manufacturing, agriculture, and disaster response."
+                        ]
+                },
+                {
+                        "tag": "quantum_computing",
+                        "patterns": [
+                          "What is Quantum Computing?",
+                          "Explain quantum computing in simple terms",
+                          "Tell me about quantum computing applications"
+                        ],
+                        "responses": [
+                          "Quantum computing is a type of computing that uses the principles of quantum mechanics to process and store information. It has the potential to solve complex problems much faster than classical computers. Quantum computing applications include cryptography, optimization, and drug discovery.",
+                          "Quantum computing leverages the unique properties of quantum mechanics to perform computations. It has the potential to revolutionize fields like cryptography, material science, and artificial intelligence. Quantum computers can solve certain problems exponentially faster than classical computers.",
+                          "Quantum computing is a new paradigm of computing that uses quantum bits (qubits) to perform calculations. It has the potential to significantly impact areas such as cryptography, weather forecasting, and optimization problems."
+                        ]
+                },
+                {
+                        "tag": "space_exploration",
+                        "patterns": [
+                          "Tell me about space exploration",
+                          "What is space exploration all about?",
+                          "Explain the goals of space exploration"
+                        ],
+                        "responses": [
+                          "Space exploration is the investigation of celestial objects and phenomena beyond Earth's atmosphere. It aims to expand human knowledge, discover new worlds, and explore the potential for life beyond our planet. Space agencies like NASA and ESA conduct missions to study the universe.",
+                          "Space exploration involves the scientific study and exploration of outer space. It serves to understand the cosmos, uncover the origins of the universe, and search for extraterrestrial life. Space missions include the exploration of planets, moons, and distant galaxies.",
+                          "Space exploration is the scientific endeavor to explore and understand the cosmos. It involves missions to planets, moons, asteroids, and beyond. Goals include advancing scientific knowledge, human colonization of other planets, and the search for extraterrestrial life."
+                        ]
+                },
+                {
+                        "tag": "about_chatgpt",
+                        "patterns": [
+                          "Who created you?",
+                          "Tell me about your creator",
+                          "What programming language are you made in?",
+                          "Who designed you?",
+                          "What's your purpose?"
+                        ],
+                        "responses": [
+                          "I was created by Shibam, the developer behind this chatbot project. Shibam designed and built me to assist with various tasks and provide information on a wide range of topics.",
+                          "My creator, Shibam, developed me to offer assistance and engage in natural language conversations. If you have any questions or need information, feel free to ask!",
+                          "I'm built using the GPT-3.5 architecture, a powerful language model, and customized by Shibam to understand and generate text in multiple languages.",
+                          "I'm here to provide information, answer questions, assist with tasks, and engage in natural language conversations. How can I help you today?",
+                          "I'm a product of Shibam's efforts to advance natural language understanding and generation. Shibam designed me to assist users like you. Is there something specific you'd like to know or discuss?"
+                        ]
+                },
+                {
+                        "tag": "privacy",
+                        "patterns": [
+                          "How do you protect my data?",
+                          "Tell me about data privacy",
+                          "What information do you collect?"
+                        ],
+                        "responses": [
+                          "We take your privacy seriously and follow strict data protection measures. Your data is kept confidential and used solely for the purpose of this conversation.",
+                          "Your data privacy is important to us. We don't collect or share personal information, and our conversations are designed to be private and secure.",
+                          "We don't collect any personal information from our conversations. Your privacy is our priority, and we ensure data protection at all times."
+                        ]
+                },
+                {
+                        "tag": "capabilities",
+                        "patterns": [
+                          "What can you do?",
+                          "Tell me your abilities",
+                          "How can you assist me?"
+                        ],
+                        "responses": [
+                          "I can answer questions, provide information on various topics, assist with programming, offer recommendations, and engage in natural language conversations. How can I assist you today?",
+                          "My capabilities include answering questions, explaining concepts, providing code examples, and much more. Feel free to ask me anything.",
+                          "I can assist with a wide range of tasks, from answering general knowledge questions to helping with coding and programming queries. Just let me know what you need help with."
+                        ]
+                },
+                {
+                        "tag": "disclaimer",
+                        "patterns": [
+                          "Do you have legal disclaimers?",
+                          "Tell me your terms of use",
+                          "What's your liability policy?"
+                        ],
+                        "responses": [
+                          "Please note that the information I provide is for general guidance only and should not be considered as professional advice. For legal or specific advice, consult a qualified professional.",
+                          "Our conversations are for informational purposes and do not constitute legal, medical, or professional advice. Users should use their discretion and seek expert guidance when needed.",
+                          "This chatbot is not a substitute for professional advice. Users should verify information independently and consult with specialists for specific concerns."
+                        ]
+                },
+                {
+                        "tag": "learning",
+                        "patterns": [
+                          "Can you learn from our conversations?",
+                          "Do you improve over time?",
+                          "Tell me about your learning process",
+                          "are u self trainer"
+                        ],
+                        "responses": [
+                          "I don't have learning capabilities. My responses are based on pre-existing knowledge, and I don't retain or learn from individual conversations.",
+                          "I don't learn or adapt from conversations. My responses are generated based on my existing knowledge and algorithms.",
+                          "I'm not designed to learn or adapt from interactions. I provide responses based on the knowledge I was trained on."
+                        ]
+                },
+                {
+                        "tag": "python_hello_world",
+                        "patterns": [
+                          "Show me a Python Hello World program",
+                          "How to write a basic Python program",
+                          "Python Hello World code"
+                        ],
+                        "responses": [
+                          "Here's a simple Python Hello World program:\n```python\nprint('Hello, World!')\n```",
+                          "To create a basic Python program, you can use this code:\n```python\nprint('Hello, World!')\n```",
+                          "A Python Hello World program looks like this:\n```python\nprint('Hello, World!')\n```"
+                        ]
+                },
+                {
+                        "tag": "java_hello_world",
+                        "patterns": [
+                          "Show me a Java Hello World program",
+                          "How to write a basic Java program",
+                          "Java Hello World code"
+                        ],
+                        "responses": [
+                          "Here's a simple Java Hello World program:\n```java\npublic class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println('Hello, World!');\n    }\n}\n```",
+                          "To create a basic Java program, you can use this code:\n```java\npublic class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println('Hello, World!');\n    }\n}\n```",
+                          "A Java Hello World program looks like this:\n```java\npublic class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println('Hello, World!');\n    }\n}\n```"
+                        ]
+                },
+                {
+                        "tag": "cpp_hello_world",
+                        "patterns": [
+                          "Show me a C++ Hello World program",
+                          "How to write a basic C++ program",
+                          "C++ Hello World code"
+                        ],
+                        "responses": [
+                          "Here's a simple C++ Hello World program:\n```cpp\n#include <iostream>\n\nint main() {\n    std::cout << 'Hello, World!' << std::endl;\n    return 0;\n}\n```",
+                          "To create a basic C++ program, you can use this code:\n```cpp\n#include <iostream>\n\nint main() {\n    std::cout << 'Hello, World!' << std::endl;\n    return 0;\n}\n```",
+                          "A C++ Hello World program looks like this:\n```cpp\n#include <iostream>\n\nint main() {\n    std::cout << 'Hello, World!' << std::endl;\n    return 0;\n}\n```"
+                        ]
+                },
+                {
+                        "tag": "python_add_two_numbers",
+                        "patterns": [
+                          "Show me a Python program to add two numbers",
+                          "How to write a Python program to add numbers",
+                          "Python code to add two numbers"
+                        ],
+                        "responses": [
+                          "Here's a Python program to add two numbers:\n```python\n# Add two numbers\nnum1 = 5\nnum2 = 3\nsum = num1 + num2\nprint('The sum is:', sum)\n```",
+                          "To create a Python program that adds two numbers, you can use this code:\n```python\n# Add two numbers\nnum1 = 5\nnum2 = 3\nsum = num1 + num2\nprint('The sum is:', sum)\n```",
+                          "A Python program to add two numbers looks like this:\n```python\n# Add two numbers\nnum1 = 5\nnum2 = 3\nsum = num1 + num2\nprint('The sum is:', sum)\n```"
+                        ]
+                },
+                {
+                        "tag": "python_factorial",
+                        "patterns": [
+                          "Show me a Python program to calculate factorial",
+                          "How to find the factorial in Python",
+                          "Python code to compute factorial"
+                        ],
+                        "responses": [
+                          "Here's a Python program to calculate the factorial of a number:\n```python\n# Calculate factorial\nnum = 5\nfactorial = 1\nfor i in range(1, num + 1):\n    factorial *= i\nprint('The factorial of', num, 'is', factorial)\n```",
+                          "To compute the factorial of a number in Python, you can use this code:\n```python\n# Calculate factorial\nnum = 5\nfactorial = 1\nfor i in range(1, num + 1):\n    factorial *= i\nprint('The factorial of', num, 'is', factorial)\n```",
+                          "A Python program to calculate the factorial of a number is shown below:\n```python\n# Calculate factorial\nnum = 5\nfactorial = 1\nfor i in range(1, num + 1):\n    factorial *= i\nprint('The factorial of', num, 'is', factorial)\n```"
+                        ]
+                },
+                {
+                        "tag": "c_sum_two_numbers",
+                        "patterns": [
+                          "Show me a C program to calculate the sum of two numbers",
+                          "How to write a C program to add numbers",
+                          "C code to find the sum of two numbers"
+                        ],
+                        "responses": [
+                          "Here's a C program to calculate the sum of two numbers:\n```c\n#include <stdio.h>\nint main() {\n    int num1 = 5;\n    int num2 = 3;\n    int sum = num1 + num2;\n    printf('The sum is: %d', sum);\n    return 0;\n}\n```",
+                          "To create a C program that adds two numbers, you can use this code:\n```c\n#include <stdio.h>\nint main() {\n    int num1 = 5;\n    int num2 = 3;\n    int sum = num1 + num2;\n    printf('The sum is: %d', sum);\n    return 0;\n}\n```",
+                          "A C program to calculate the sum of two numbers looks like this:\n```c\n#include <stdio.h>\nint main() {\n    int num1 = 5;\n    int num2 = 3;\n    int sum = num1 + num2;\n    printf('The sum is: %d', sum);\n    return 0;\n}\n```"
+                        ]
+                },
+                {
+                        "tag": "c_prime_number",
+                        "patterns": [
+                          "Show me a C program to check if a number is prime",
+                          "How to determine prime numbers in C",
+                          "C code to verify if a number is prime"
+                        ],
+                        "responses": [
+                          "Here's a C program to check if a number is prime:\n```c\n#include <stdio.h>\n#include <stdbool.h>\nint main() {\n    int num = 7;\n    bool is_prime = true;\n    for (int i = 2; i <= num / 2; i++) {\n        if (num % i == 0) {\n            is_prime = false;\n            break;\n        }\n    }\n    if (is_prime) {\n        printf('%d is a prime number', num);\n    } else {\n        printf('%d is not a prime number', num);\n    }\n    return 0;\n}\n```",
+                          "To determine if a number is prime in C, you can use this code:\n```c\n#include <stdio.h>\n#include <stdbool.h>\nint main() {\n    int num = 7;\n    bool is_prime = true;\n    for (int i = 2; i <= num / 2; i++) {\n        if (num % i == 0) {\n            is_prime = false;\n            break;\n        }\n    }\n    if (is_prime) {\n        printf('%d is a prime number', num);\n    } else {\n        printf('%d is not a prime number', num);\n    }\n    return 0;\n}\n```",
+                          "A C program to check if a number is prime is as follows:\n```c\n#include <stdio.h>\n#include <stdbool.h>\nint main() {\n    int num = 7;\n    bool is_prime = true;\n    for (int i = 2; i <= num / 2; i++) {\n        if (num % i == 0) {\n            is_prime = false;\n            break;\n        }\n    }\n    if (is_prime) {\n        printf('%d is a prime number', num);\n    } else {\n        printf('%d is not a prime number', num);\n    }\n    return 0;\n}\n```"
+                        ]
+                },
+                {
+                        "tag": "web_development",
+                        "patterns": [
+                          "Tell me about web development",
+                          "How to create a website",
+                          "Explain front-end and back-end development"
+                        ],
+                        "responses": [
+                          "Web development involves creating websites and web applications. It can be categorized into front-end and back-end development, which focus on the user interface and server-side functionality, respectively.",
+                          "To create a website, you'll need knowledge of HTML, CSS, and JavaScript for front-end development. Back-end development often involves using languages like Python, Ruby, or Node.js.",
+                          "Front-end development deals with the visual aspects of a website, while back-end development handles server-side logic, databases, and application functionality."
+                        ]
+                },
+                {
+                        "tag": "c_max_of_three_numbers",
+                        "patterns": [
+                          "Show me a C program to find the maximum of three numbers",
+                          "How to determine the largest number in C",
+                          "C code to find the maximum of three numbers"
+                        ],
+                        "responses": [
+                          "Here's a C program to find the maximum of three numbers:\n```c\n#include <stdio.h>\nint main() {\n    int num1 = 5, num2 = 7, num3 = 3;\n    int max;\n    max = (num1 > num2) ? (num1 > num3 ? num1 : num3) : (num2 > num3 ? num2 : num3);\n    printf('The maximum is: %d', max);\n    return 0;\n}\n```",
+                          "To determine the largest number among three in C, you can use this code:\n```c\n#include <stdio.h>\nint main() {\n    int num1 = 5, num2 = 7, num3 = 3;\n    int max;\n    max = (num1 > num2) ? (num1 > num3 ? num1 : num3) : (num2 > num3 ? num2 : num3);\n    printf('The maximum is: %d', max);\n    return 0;\n}\n```",
+                          "A C program to find the maximum of three numbers looks like this:\n```c\n#include <stdio.h>\nint main() {\n    int num1 = 5, num2 = 7, num3 = 3;\n    int max;\n    max = (num1 > num2) ? (num1 > num3 ? num1 : num3) : (num2 > num3 ? num2 : num3);\n    printf('The maximum is: %d', max);\n    return 0;\n}\n```"
+                        ]
+                },
+                {
+                        "tag": "c_reverse_number",
+                        "patterns": [
+                          "Show me a C program to reverse a number",
+                          "How to reverse a number in C",
+                          "C code to reverse an integer"
+                        ],
+                        "responses": [
+                          "Here's a C program to reverse a number:\n```c\n#include <stdio.h>\nint main() {\n    int num = 12345;\n    int reversed = 0;\n    while (num != 0) {\n        reversed = reversed * 10 + num % 10;\n        num /= 10;\n    }\n    printf('The reversed number is: %d', reversed);\n    return 0;\n}\n```",
+                          "To reverse an integer in C, you can use this code:\n```c\n#include <stdio.h>\nint main() {\n    int num = 12345;\n    int reversed = 0;\n    while (num != 0) {\n        reversed = reversed * 10 + num % 10;\n        num /= 10;\n    }\n    printf('The reversed number is: %d', reversed);\n    return 0;\n}\n```",
+                          "A C program to reverse a number is as follows:\n```c\n#include <stdio.h>\nint main() {\n    int num = 12345;\n    int reversed = 0;\n    while (num != 0) {\n        reversed = reversed * 10 + num % 10;\n        num /= 10;\n    }\n    printf('The reversed number is: %d', reversed);\n    return 0;\n}\n```"
+                        ]
+                },
+                {
+                        "tag": "c_fibonacci_series",
+                        "patterns": [
+                          "Show me a C program to calculate the Fibonacci series",
+                          "How to generate the Fibonacci sequence in C",
+                          "C code to compute the Fibonacci numbers"
+                        ],
+                        "responses": [
+                          "Here's a C program to calculate the Fibonacci series:\n```c\n#include <stdio.h>\nint main() {\n    int n = 10;\n    int first = 0, second = 1, next;\n    for (int i = 0; i < n; i++) {\n        printf('%d, ', first);\n        next = first + second;\n        first = second;\n        second = next;\n    }\n    return 0;\n}\n```",
+                          "To generate the Fibonacci sequence in C, you can use this code:\n```c\n#include <stdio.h>\nint main() {\n    int n = 10;\n    int first = 0, second = 1, next;\n    for (int i = 0; i < n; i++) {\n        printf('%d, ', first);\n        next = first + second;\n        first = second;\n        second = next;\n    }\n    return 0;\n}\n```",
+                          "A C program to calculate the Fibonacci series looks like this:\n```c\n#include <stdio.h>\nint main() {\n    int n = 10;\n    int first = 0, second = 1, next;\n    for (int i = 0; i < n; i++) {\n        printf('%d, ', first);\n        next = first + second;\n        first = second;\n        second = next;\n    }\n    return 0;\n}\n```"
+                        ]
+                },
+                {
+                        "tag": "c_circle_area",
+                        "patterns": [
+                          "Show me a C program to calculate the area of a circle",
+                          "How to find the area of a circle in C",
+                          "C code to compute the circle's area"
+                        ],
+                        "responses": [
+                          "Here's a C program to calculate the area of a circle:\n```c\n#include <stdio.h>\n#define PI 3.14159265359\nint main() {\n    double radius = 5.0;\n    double area = PI * radius * radius;\n    printf('The area of the circle is %lf', area);\n    return 0;\n}\n```",
+                          "To find the area of a circle in C, you can use this code:\n```c\n#include <stdio.h>\n#define PI 3.14159265359\nint main() {\n    double radius = 5.0;\n    double area = PI * radius * radius;\n    printf('The area of the circle is %lf', area);\n    return 0;\n}\n```",
+                          "A C program to calculate the area of a circle is as follows:\n```c\n#include <stdio.h>\n#define PI 3.14159265359\nint main() {\n    double radius = 5.0;\n    double area = PI * radius * radius;\n    printf('The area of the circle is %lf', area);\n    return 0;\n}\n```"
+                        ]
+                },
+                {
+                        "tag": "c_sort_array",
+                        "patterns": [
+                          "Show me a C program to sort an array in ascending order",
+                          "How to perform array sorting in C",
+                          "C code to sort an array"
+                        ],
+                        "responses": [
+                          "Here's a C program to sort an array in ascending order using the Bubble Sort algorithm:\n```c\n#include <stdio.h>\nvoid bubbleSort(int arr[], int n) {\n    for (int i = 0; i < n - 1; i++) {\n        for (int j = 0; j < n - i - 1; j++) {\n            if (arr[j] > arr[j + 1]) {\n                int temp = arr[j];\n                arr[j] = arr[j + 1];\n                arr[j + 1] = temp;\n            }\n        }\n    }\n}\nint main() {\n    int arr[] = {64, 34, 25, 12, 22, 11, 90};\n    int n = sizeof(arr) / sizeof(arr[0]);\n    bubbleSort(arr, n);\n    printf('Sorted array: ');\n    for (int i = 0; i < n; i++)\n        printf('%d ', arr[i]);\n    return 0;\n}\n```",
+                          "To perform array sorting in C, you can use the Bubble Sort algorithm. Here's the code:\n```c\n#include <stdio.h>\nvoid bubbleSort(int arr[], int n) {\n    for (int i = 0; i < n - 1; i++) {\n        for (int j = 0; j < n - i - 1; j++) {\n            if (arr[j] > arr[j + 1]) {\n                int temp = arr[j];\n                arr[j] = arr[j + 1];\n                arr[j + 1] = temp;\n            }\n        }\n    }\n}\nint main() {\n    int arr[] = {64, 34, 25, 12, 22, 11, 90};\n    int n = sizeof(arr) / sizeof(arr[0]);\n    bubbleSort(arr, n);\n    printf('Sorted array: ');\n    for (int i = 0; i < n; i++)\n        printf('%d ', arr[i]);\n    return 0;\n}\n```",
+                          "A C program to sort an array in ascending order using the Bubble Sort algorithm is shown below:\n```c\n#include <stdio.h>\nvoid bubbleSort(int arr[], int n) {\n    for (int i = 0; i < n - 1; i++) {\n        for (int j = 0; j < n - i - 1; j++) {\n            if (arr[j] > arr[j + 1]) {\n                int temp = arr[j];\n                arr[j] = arr[j + 1];\n                arr[j + 1] = temp;\n            }\n        }\n    }\n}\nint main() {\n    int arr[] = {64, 34, 25, 12, 22, 11, 90};\n    int n = sizeof(arr) / sizeof(arr[0]);\n    bubbleSort(arr, n);\n    printf('Sorted array: ');\n    for (int i = 0; i < n; i++)\n        printf('%d ', arr[i]);\n    return 0;\n}\n```"
+                        ]
+                },
+                {
+                        "tag": "RAMExplanation",
+                        "patterns": ["What is RAM?", "Explain Random Access Memory.", "How does RAM work?", "Tell me about RAM."],
+                        "responses": ["RAM (Random Access Memory) is a type of computer memory that is used to store data that is actively being used...", "RAM is a volatile memory, meaning it loses its data when the computer is powered off...", "RAM provides fast and temporary storage for data that the CPU needs to access quickly.", "In a nutshell, RAM is like a short-term memory for your computer."]
+                },
+                {
+                        "tag": "ROMExplanation",
+                        "patterns": ["What is ROM?", "Explain Read-Only Memory.", "How does ROM work?", "Tell me about ROM."],
+                        "responses": ["ROM (Read-Only Memory) is a type of computer memory that stores data permanently and cannot be easily altered...", "ROM retains its data even when the computer is powered off...", "ROM is often used to store firmware, BIOS, and essential system instructions.", "In essence, ROM is like the long-term memory of a computer."]
+                },
+                {
+                        "tag": "RAMUpgrade",
+                        "patterns": ["How can I upgrade my computer's RAM?", "Steps to install more RAM.", "RAM upgrade guide."],
+                        "responses": ["To upgrade your RAM, you'll need to purchase compatible RAM modules...", "Turn off your computer, open the case, and locate the RAM slots...", "Carefully insert the new RAM modules, ensuring they're seated correctly...", "Put your computer back together, power it on, and check your system properties to confirm the upgrade."]
+                },
+                {
+                        "tag": "ROMTypes",
+                        "patterns": ["What are the different types of ROM?", "Explain PROM and EPROM.", "Tell me about Flash ROM."],
+                        "responses": ["There are various types of ROM, including PROM (Programmable Read-Only Memory), EPROM (Erasable Programmable Read-Only Memory), and Flash ROM...", "PROM can be programmed once, and its content is permanent...", "EPROM can be erased and reprogrammed using UV light...", "Flash ROM is electrically erasable and reprogrammable and is commonly used in modern devices."]
+                },
+                {
+                        "tag": "SSDAdvantages",
+                        "patterns": ["What are the advantages of SSDs?", "Tell me why SSDs are better.", "Pros of using solid-state drives."],
+                        "responses": ["SSDs offer faster data access and boot times, making your computer more responsive...", "They are more durable because they lack moving parts, reducing the risk of mechanical failures...", "SSDs are energy-efficient, helping to prolong battery life in laptops and other portable devices.", "In summary, SSDs provide speed, reliability, and energy efficiency."]
+                },
+                {
+                        "tag": "HDDAdvantages",
+                        "patterns": ["What are the advantages of HDDs?", "Why choose HDDs over SSDs?", "Pros of hard disk drives."],
+                        "responses": ["HDDs provide larger storage capacities, making them cost-effective for mass storage...", "They are well-suited for tasks like data backup and archiving...", "HDDs are more budget-friendly for users who need lots of storage space.", "In a nutshell, HDDs are all about capacity and affordability."]
+                },{
+                        "tag": "RAMSize",
+                        "patterns": ["How do I determine the size of my computer's RAM?", "Check RAM capacity.", "Find RAM size."],
+                        "responses": ["You can check your computer's RAM size by right-clicking on 'My Computer' or 'This PC,' then selecting 'Properties'...", "Alternatively, you can open the Task Manager and go to the 'Performance' tab to view your RAM size.", "In summary, there are multiple ways to check your RAM size, both through system properties and the Task Manager."]
+                },
+                {
+                        "tag": "ROMUsage",
+                        "patterns": ["What is ROM used for in computers?", "Explain the role of ROM.", "How is ROM utilized in devices?"],
+                        "responses": ["ROM is used in computers to store firmware and essential system instructions...", "It contains the initial startup code (BIOS/UEFI) required to boot your computer...", "In devices, ROM holds critical data like device-specific settings and low-level software.", "In short, ROM ensures that your computer and devices can boot and operate properly."]
+                },
+                {
+                        "tag": "SSDPerformance",
+                        "patterns": ["How does SSD performance compare to HDD?", "Explain the speed of solid-state drives.", "SSD vs HDD speed."],
+                        "responses": ["SSDs are significantly faster than HDDs due to their lack of moving parts...", "They offer faster data access times and are ideal for tasks like loading applications and booting your system quickly...", "In summary, SSDs excel in speed and responsiveness compared to traditional hard drives."]
+                },
+                {
+                        "tag": "HDDReliability",
+                        "patterns": ["Are HDDs more reliable than SSDs?", "Discuss the reliability of hard disk drives.", "SSD vs HDD reliability."],
+                        "responses": ["HDDs can be more reliable for long-term storage because they are less susceptible to certain types of wear...", "However, SSDs are becoming increasingly reliable with advances in technology and error-correcting mechanisms...", "In conclusion, reliability can vary based on use case and technology, but both SSDs and HDDs can be reliable for different purposes."]
+                },
+                {
+                        "tag": "SolarSystem",
+                        "patterns": ["Tell me about the solar system.", "What are the planets in our solar system?", "Explain the Sun's role in the solar system."],
+                        "responses": ["The solar system is a collection of celestial objects, including the Sun, planets, moons, and more...", "There are eight major planets in our solar system, including Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune...", "The Sun is at the center of our solar system and provides heat, light, and gravitational pull that keeps the planets in orbit."]
+                },
+                {
+                        "tag": "AstronomicalDiscoveries",
+                        "patterns": ["Tell me about significant astronomical discoveries.", "Explain the discovery of exoplanets.", "Discuss recent space exploration achievements."],
+                        "responses": ["Significant astronomical discoveries include the discovery of exoplanets, cosmic microwave background radiation, and the expansion of the universe...", "Exoplanets are planets outside our solar system, and their discovery has expanded our understanding of the cosmos...", "Recent space exploration achievements include the landing of rovers on Mars, the study of distant galaxies, and more."]
+                },
+                {
+                        "tag": "BlackHoles",
+                        "patterns": ["What is a black hole?", "Explain the concept of event horizons.", "Tell me about famous black holes."],
+                        "responses": ["A black hole is a region in space with gravity so strong that nothing, not even light, can escape from it...", "The event horizon is the boundary surrounding a black hole beyond which nothing can return...", "Famous black holes include Sagittarius A* at the center of our Milky Way and M87's supermassive black hole, which was imaged for the first time in 2019."]
+                },
+                {
+                        "tag": "SpaceExploration",
+                        "patterns": ["Discuss space exploration missions.", "What is the International Space Station?", "Explain the concept of space tourism."],
+                        "responses": ["Space exploration missions involve sending spacecraft to explore other planets, moons, and beyond...", "The International Space Station (ISS) is a space station that orbits the Earth and serves as a hub for scientific research and international cooperation...", "Space tourism is the idea of private individuals traveling to space for recreational or research purposes and is an emerging industry."]
+                },
+                {
+                        "tag": "AstronomyBasics",
+                        "patterns": ["Explain the basics of astronomy.", "What are constellations?", "How do telescopes work?"],
+                        "responses": ["Astronomy is the scientific study of celestial objects, including stars, planets, galaxies, and the universe...", "Constellations are patterns of stars in the night sky that have been recognized and named by various cultures throughout history...", "Telescopes work by gathering and magnifying light, allowing astronomers to observe distant objects in space."]
+                },
+                {
+                        "tag": "MarsExploration",
+                        "patterns": ["Tell me about Mars exploration.", "Explain Mars rovers.", "What have we learned from studying Mars?"],
+                        "responses": ["Mars exploration involves sending spacecraft and rovers to study the Red Planet and search for signs of past or present life...", "Mars rovers, like Curiosity and Perseverance, are robotic vehicles designed to explore the Martian surface...", "We've learned about Mars' geology, climate, and the potential for past liquid water, which hints at the possibility of life."]
+                },
+                {
+                        "tag": "HubbleSpaceTelescope",
+                        "patterns": ["What is the Hubble Space Telescope?", "Explain the Hubble's contribution to astronomy.", "Tell me about famous Hubble images."],
+                        "responses": ["The Hubble Space Telescope is a space-based observatory that has provided stunning images and valuable data since its launch in 1990...", "Hubble has greatly expanded our knowledge of the universe, from discovering new galaxies to measuring the rate of the universe's expansion...", "Famous Hubble images include the Pillars of Creation, the Hubble Deep Field, and the Eagle Nebula."]
+                },
+                {
+                        "tag": "ExtraterrestrialLife",
+                        "patterns": ["Is there extraterrestrial life?", "Discuss the search for alien life.", "Explain the Drake Equation."],
+                        "responses": ["The search for extraterrestrial life continues, but we haven't found conclusive evidence yet...", "Scientists are using various methods, such as the study of extremophiles and the search for exoplanets, to search for signs of life beyond Earth...", "The Drake Equation is a formula used to estimate the number of extraterrestrial civilizations in our galaxy based on various factors."]
+                },
+                {
+                        "tag": "AsteroidsAndComets",
+                        "patterns": ["What are asteroids and comets?", "Explain the differences between asteroids and comets.", "How do scientists track asteroids?"],
+                        "responses": ["Asteroids are rocky objects that orbit the Sun, while comets are composed of ice and dust and have distinct tails when they approach the Sun...", "Asteroids are often found in the asteroid belt between Mars and Jupiter, while comets come from the outer reaches of the solar system...", "Scientists track asteroids using telescopes, radar, and space missions to understand their orbits and potential threats to Earth."]
+                },   
+                {
+                        "tag": "NASA",
+                        "patterns": ["Tell me about NASA.", "What is the National Aeronautics and Space Administration?", "Discuss NASA's missions and achievements."],
+                        "responses": ["NASA, the National Aeronautics and Space Administration, is the United States' space agency responsible for space exploration and research...", "NASA has achieved significant milestones, such as landing humans on the Moon, sending rovers to Mars, and conducting space telescopes like Hubble...", "NASA's missions and achievements continue to push the boundaries of space exploration and scientific discovery."]
+                },
+                {
+                        "tag": "CosmicPhenomena",
+                        "patterns": ["Explain cosmic phenomena.", "What are supernovae?", "Discuss black hole mergers."],
+                        "responses": ["Cosmic phenomena include events like supernovae, which are explosive deaths of massive stars, releasing vast amounts of energy...", "Black hole mergers occur when two black holes spiral together and merge, creating gravitational waves that can be detected on Earth...", "These cosmic phenomena provide crucial insights into the universe's workings and its history."]
+                },
+                {
+                        "tag": "SpaceColonization",
+                        "patterns": ["Is space colonization possible?", "Discuss the potential for human colonization of other planets.", "Explain the challenges of space colonization."],
+                        "responses": ["Space colonization is a concept under exploration, with potential for future human habitation of other planets, such as Mars...", "Challenges include developing sustainable life support systems, addressing radiation exposure, and ensuring a closed-loop ecosystem...", "The possibility of space colonization depends on advancements in technology and solving these challenges."]
+                },
+                {
+                        "tag": "Galaxies",
+                        "patterns": ["Explain galaxies.", "What are the different types of galaxies?", "Discuss the Milky Way."],
+                        "responses": ["Galaxies are vast systems of stars, planets, dust, and dark matter bound together by gravity...", "There are various types of galaxies, including spiral galaxies, elliptical galaxies, and irregular galaxies...", "The Milky Way is the galaxy in which our solar system resides, and it is a barred spiral galaxy with a central bar-shaped structure."]
+                },
+                {
+                        "tag": "SpaceTelescopes",
+                        "patterns": ["Tell me about space telescopes.", "Discuss the contributions of the James Webb Space Telescope.", "What is the purpose of the Chandra X-ray Observatory?"],
+                        "responses": ["Space telescopes are telescopes placed in space to observe celestial objects without interference from Earth's atmosphere...", "The James Webb Space Telescope (JWST) is set to make groundbreaking observations of the universe, focusing on infrared wavelengths...", "The Chandra X-ray Observatory is designed to study X-rays from high-energy regions of the universe, including black holes and supernova remnants."]
+                },
+                {
+                        "tag": "Astrobiology",
+                        "patterns": ["What is astrobiology?", "Explain the search for extraterrestrial life.", "Discuss the potential for life on other planets."],
+                        "responses": ["Astrobiology is the study of the origin, evolution, and potential for life in the universe...", "Scientists search for extraterrestrial life by looking for habitable environments on other planets and studying extremophiles on Earth...", "The search for life on other planets considers the possibility of life forms adapted to diverse conditions."]
+                },
+                {
+                        "tag": "SpaceTechnology",
+                        "patterns": ["Discuss advancements in space technology.", "What are the latest innovations in space exploration?", "Explain space technology's impact on everyday life."],
+                        "responses": ["Advancements in space technology have led to reusable rockets, more powerful propulsion systems, and advanced space suits...", "Recent innovations include asteroid mining, 3D printing in space, and interplanetary internet communication...", "Space technology has a significant impact on Earth, from weather forecasting to GPS navigation and medical imaging."]
+                },
+                {
+                        "tag": "SpaceEmissions",
+                        "patterns": ["What are cosmic emissions?", "Explain gamma-ray bursts.", "Tell me about the sources of cosmic rays."],
+                        "responses": ["Cosmic emissions are high-energy particles and radiation from outer space...", "Gamma-ray bursts are intense and short-lived bursts of gamma-ray radiation often associated with supernovae and black hole mergers...", "Cosmic rays come from various sources, including the Sun, supernovae, and even outside our galaxy, and they consist of high-energy particles."]
+                },
+                {
+                        "tag": "HubbleSuccessors",
+                        "patterns": ["What comes after the Hubble Space Telescope?", "Explain the James Webb Space Telescope.", "Tell me about future space observatories."],
+                        "responses": ["The James Webb Space Telescope (JWST) is set to succeed the Hubble Space Telescope, focusing on infrared observations...", "Future space observatories include the Wide Field Infrared Survey Telescope (WFIRST) and the Advanced Technology Large-Aperture Space Telescope (ATLAST)...", "These observatories aim to expand our understanding of the universe with advanced technologies."]
+                },
+                {
+                        "tag": "DarkMatter",
+                        "patterns": ["What is dark matter?", "Explain the role of dark matter in the universe.", "Tell me about dark matter research."],
+                        "responses": ["Dark matter is a mysterious and invisible form of matter that doesn't emit, absorb, or reflect light...", "It is thought to play a significant role in the structure and expansion of the universe, as it exerts gravitational influence...", "Dark matter research involves experiments, simulations, and observations aimed at uncovering its nature and properties."]
+                },
+                {
+                        "tag": "ExoplanetDiscoveries",
+                        "patterns": ["Discuss recent exoplanet discoveries.", "Explain the methods used to find exoplanets.", "Tell me about potentially habitable exoplanets."],
+                        "responses": ["Recent exoplanet discoveries include a variety of exoplanets with different characteristics...", "Methods to find exoplanets include the transit method, radial velocity method, and direct imaging...", "Potentially habitable exoplanets, such as those in the habitable zone, are of interest for the possibility of life beyond Earth."]
+                },
+                {
+                        "tag": "AstroPhysics",
+                        "patterns": ["What is astrophysics?", "Explain the role of astrophysicists.", "Tell me about notable astrophysical discoveries."],
+                        "responses": ["Astrophysics is a branch of astronomy that focuses on understanding the physical properties and behavior of celestial objects...", "Astrophysicists study and analyze data from space observations to decipher the fundamental processes in the universe...", "Notable discoveries in astrophysics include the cosmic microwave background radiation, the existence of dark matter, and the expansion of the universe."]
+                },
+                {
+                        "tag": "AstronomyHistory",
+                        "patterns": ["Tell me about the history of astronomy.", "Explain the contributions of famous astronomers.", "Discuss the evolution of astronomical instruments."],
+                        "responses": ["The history of astronomy dates back thousands of years, with early astronomers studying the night sky and developing calendars...", "Famous astronomers like Galileo Galilei, Nicolaus Copernicus, and Johannes Kepler made groundbreaking contributions to the field...", "Astronomical instruments have evolved from simple tools like astrolabes to advanced telescopes and space observatories."]
+                },
+                {
+                        "tag": "AstroPhotography",
+                        "patterns": ["How is astrophotography done?", "Explain capturing images of celestial objects.", "Discuss the equipment used in astrophotography."],
+                        "responses": ["Astrophotography involves capturing images of celestial objects like stars, galaxies, and nebulae using specialized cameras...", "It often requires long exposures to gather enough light and may involve stacking multiple images...", "Equipment used in astrophotography includes telescopes, mountings, CCD cameras, and filters for specific wavelengths."]
+                },
+                {
+                        "tag": "SpaceMissions",
+                        "patterns": ["Discuss recent space missions.", "Explain NASA's Artemis program.", "Tell me about the Voyager missions."],
+                        "responses": ["Recent space missions include the Perseverance rover on Mars and the launch of the James Webb Space Telescope...", "NASA's Artemis program aims to return humans to the Moon, establish a sustainable lunar presence, and prepare for Mars missions...", "The Voyager missions are a pair of spacecraft that have traveled beyond our solar system, carrying messages from Earth."]
+                },
+                {
+                        "tag": "SpacePhenomena",
+                        "patterns": ["Explain space phenomena.", "What are quasars?", "Tell me about cosmic inflation."],
+                        "responses": ["Space phenomena include remarkable events and objects observed in the universe...", "Quasars are incredibly bright and energetic sources of radiation often associated with supermassive black holes at the centers of galaxies...", "Cosmic inflation is a theory that explains the rapid expansion of the universe shortly after the Big Bang."]
+                },
+                {
+                        "tag": "SpacePolicy",
+                        "patterns": ["Discuss space policy and international cooperation.", "Explain space treaties.", "Tell me about the commercialization of space."],
+                        "responses": ["Space policy involves regulations, agreements, and laws that govern space activities and international cooperation in space exploration...", "Space treaties, like the Outer Space Treaty, establish guidelines for the use of space and the Moon, including the prohibition of nuclear weapons...", "The commercialization of space involves private companies engaging in space exploration, satellite deployment, and potential space tourism."]
+                },
+                {
+                        "tag": "ExoSolarSystems",
+                        "patterns": ["Explain exoplanetary systems.", "Discuss the discovery of exoplanets with potential habitability.", "Tell me about the TRAPPIST-1 system."],
+                        "responses": ["Exoplanetary systems are star systems with planets orbiting a star, similar to our solar system...", "Some exoplanets are considered potentially habitable if they are in the 'Goldilocks zone' where conditions may support life...", "The TRAPPIST-1 system is known for having multiple Earth-sized exoplanets, some of which are in the habitable zone."]
+                },
+                {
+                        "tag": "CosmicTime",
+                        "patterns": ["Explain the concept of cosmic time.", "How do astronomers measure the age of the universe?", "Tell me about the cosmic microwave background."],
+                        "responses": ["Cosmic time refers to the time that has passed since the Big Bang, marking the age of the universe...", "Astronomers measure the age of the universe by studying the cosmic microwave background radiation and the expansion of the cosmos...", "The cosmic microwave background is residual radiation from the Big Bang, providing critical clues about the universe's early moments."]
+                },
+                {
+                        "tag": "Satellites",
+                        "patterns": ["Discuss the role of artificial satellites.", "What is the International Space Station (ISS)?", "Explain the purpose of Earth-observing satellites."],
+                        "responses": ["Artificial satellites play vital roles in communication, navigation, weather monitoring, and scientific research...", "The International Space Station (ISS) is a space laboratory and living space for astronauts, orbiting the Earth for scientific experiments...", "Earth-observing satellites help monitor climate change, track weather patterns, and provide data for environmental studies."]
+                },
+                {
+                        "tag": "SpaceAnomalies",
+                        "patterns": ["Tell me about space anomalies.", "Explain mysterious cosmic phenomena.", "Discuss unexplained space events."],
+                        "responses": ["Space anomalies refer to unusual and unexplained events or phenomena observed in space...", "Mysterious cosmic phenomena may include fast radio bursts (FRBs), dark matter, and unusual galaxy formations...", "Unexplained space events challenge our current understanding of the cosmos and spark scientific investigations."]
+                },
+                {
+                        "tag": "AstroGeology",
+                        "patterns": ["What is astrogeology?", "Explain the study of planetary geology.", "Tell me about geology on other celestial bodies."],
+                        "responses": ["Astrogeology is the study of geological processes and features on celestial bodies, including planets and moons...", "The study of planetary geology helps us understand the geological history and composition of other worlds...", "Geological research on other celestial bodies has revealed features like volcanoes, impact craters, and unique landscapes."]
+                },
+                {
+                        "tag": "CosmicExploration",
+                        "patterns": ["Discuss the future of cosmic exploration.", "Explain plans for human missions to Mars.", "Tell me about the search for extraterrestrial intelligence (SETI)."],
+                        "responses": ["The future of cosmic exploration includes missions to Mars, the study of distant exoplanets, and continued space telescopes...", "Plans for human missions to Mars aim to establish a sustainable presence on the Red Planet and explore its potential for human colonization...", "SETI involves the search for signs of intelligent life in the universe, using radio telescopes and other methods."]
+                },
+                {
+                        "tag": "SpaceHazards",
+                        "patterns": ["Discuss space hazards and near-Earth objects.", "Explain the threat of asteroid impacts.", "Tell me about space debris and orbital collision risks."],
+                        "responses": ["Space hazards include near-Earth objects (NEOs) like asteroids and comets that could impact our planet...", "The threat of asteroid impacts is mitigated through asteroid tracking and deflection strategies...", "Space debris poses a risk to satellites and spacecraft, and the potential for orbital collisions is closely monitored."]
+                },
+                {
+                        "tag": "StellarPhenomena",
+                        "patterns": ["Explain stellar phenomena.", "Tell me about supernovae and their impact.", "Discuss the life cycle of stars."],
+                        "responses": ["Stellar phenomena involve events and processes related to stars...", "Supernovae are explosive deaths of massive stars that release vast amounts of energy and create heavy elements...", "The life cycle of stars includes stages like nebulae, protostars, main-sequence stars, and eventual transformation into white dwarfs, neutron stars, or black holes."]
+                },
+                {
+                        "tag": "ExoplanetHabitability",
+                        "patterns": ["What makes a planet habitable?", "Discuss the conditions for life on exoplanets.", "Tell me about the potential for habitable exoplanets."],
+                        "responses": ["Habitability of a planet depends on factors like distance from its star, presence of liquid water, and a stable atmosphere...", "Conditions for life on exoplanets include suitable temperatures, availability of water, and the presence of essential molecules...", "Exoplanets within their star's habitable zone offer the potential for life as we know it."]
+                },
+                {
+
+                        "tag": "SpaceJunk",
+                        "patterns": ["Tell me about space junk.", "Explain the challenges of space debris.", "Discuss the potential solutions to space debris."],
+                        "responses": ["Space junk refers to defunct satellites, spent rocket stages, and fragments in Earth's orbit...", "Space debris poses challenges, including collision risks to operational satellites and the International Space Station...", "Potential solutions to space debris include removal missions, guidelines for responsible space activities, and debris tracking."]
+                },
+                {
+                        "tag": "CosmicScales",
+                        "patterns": ["Discuss cosmic scales.", "Explain the vastness of the universe.", "Tell me about the scale of galaxies."],
+                        "responses": ["Cosmic scales refer to the enormous size and distances in the universe...", "The universe's vastness is beyond comprehension, with galaxies separated by billions of light-years...", "Galaxies vary in size, from dwarf galaxies with thousands of stars to massive galaxies with billions of stars."]
+                },
+                {
+                        "tag": "PlanetaryFormation",
+                        "patterns": ["Explain planetary formation.", "Discuss the birth of planets.", "Tell me about protoplanetary disks."],
+                        "responses": ["Planetary formation is the process by which planets are born from disks of gas and dust surrounding young stars...", "Planets form from the accretion of material within protoplanetary disks, gradually growing in size...", "Protoplanetary disks are flat structures where planets form and contain the raw materials for planet building."]
+                },
+                {
+                        "tag": "SupermassiveBlackHoles",
+                        "patterns": ["Explain supermassive black holes.", "Discuss the role of supermassive black holes in galaxies.", "Tell me about the size of supermassive black holes."],
+                        "responses": ["Supermassive black holes are incredibly massive black holes found at the centers of galaxies, including our Milky Way...", "They play a crucial role in the evolution and dynamics of galaxies, affecting stars and gas in their vicinity...", "Supermassive black holes can be millions to billions of times the mass of our Sun."]
+                },
+                {
+                        "tag": "HawkingRadiation",
+                        "patterns": ["Explain the concept of black hole evaporation.", "Tell me about Stephen Hawking's contribution to black hole physics."],
+                        "responses": ["Hawking radiation is a theoretical prediction by Stephen Hawking that black holes can emit radiation due to quantum effects near their event horizons...", "Black hole evaporation is the process by which black holes gradually lose mass through the emission of Hawking radiation...", "Stephen Hawking's work on black hole physics and Hawking radiation significantly advanced our understanding of black holes."]
+                },
+                {
+                        "tag": "DarkMatterProperties",
+                        "patterns": ["What are the properties of dark matter?", "Discuss the evidence for the existence of dark matter.", "Explain the nature of dark matter."],
+                        "responses": ["Dark matter is a mysterious form of matter that does not interact with light and is thus invisible...", "Evidence for dark matter includes its gravitational effects on galaxies and the large-scale structure of the universe...", "The nature of dark matter remains a subject of ongoing research, with various candidates proposed, such as WIMPs and axions."]
+                },
+                {
+                        "tag": "DarkMatterDetection",
+                        "patterns": ["How do scientists detect dark matter?", "Discuss experiments and methods for dark matter detection.", "Tell me about the challenges of dark matter detection."],
+                        "responses": ["Scientists detect dark matter through experiments involving underground detectors, particle colliders, and astrophysical observations...", "Methods for dark matter detection include searching for weakly interacting massive particles (WIMPs) and indirect detection through cosmic rays...", "Challenges in dark matter detection include the elusive nature of dark matter and distinguishing it from other particles."]
+                },
+                {
+                        "tag": "BlackHoleFormation",
+                        "patterns": ["Explain the formation of black holes.", "Discuss the life cycle of massive stars and black hole formation.", "Tell me about the gravitational collapse of matter into black holes."],
+                        "responses": ["Black holes can form from the gravitational collapse of massive stars, typically those with more than about 20 times the mass of the Sun...", "The life cycle of massive stars involves nuclear fusion, leading to a supernova explosion and the potential formation of a black hole if the core mass exceeds a critical threshold...", "Gravitational collapse occurs when the core of a massive star cannot withstand its own gravity and collapses into a singularity, forming a black hole."]
+                },
+                {
+                        "tag": "BlackHoleTypes",
+                        "patterns": ["Discuss different types of black holes.", "Explain the characteristics of stellar-mass black holes and supermassive black holes.", "Tell me about intermediate-mass black holes."],
+                        "responses": ["There are several types of black holes, including stellar-mass black holes, supermassive black holes, and intermediate-mass black holes...", "Stellar-mass black holes form from the collapse of massive stars and are typically a few times the mass of the Sun...", "Supermassive black holes are found at the centers of galaxies and can be millions to billions of times the mass of the Sun, while intermediate-mass black holes are less massive than supermassive black holes but more massive than stellar-mass black holes."]
+                },  
+                {
+                        "tag": "DarkMatterTheories",
+                        "patterns": ["Explain theories about the nature of dark matter.", "Discuss the WIMP hypothesis.", "Tell me about axions as a candidate for dark matter."],
+                        "responses": ["Various theories exist about the nature of dark matter, including the hypothesis of Weakly Interacting Massive Particles (WIMPs) and axions...", "The WIMP hypothesis suggests that dark matter consists of a type of particle that interacts weakly with other matter, making it challenging to detect...", "Axions are a different class of particles proposed as candidates for dark matter, and their properties make them a compelling candidate for further research."]
+                },
+                {
+                        "tag": "BlackHoleInformationParadox",
+                        "patterns": ["Discuss the black hole information paradox.", "Explain the conflict between general relativity and quantum mechanics in black holes.", "Tell me about Hawking's resolution to the information paradox."],
+                        "responses": ["The black hole information paradox is a long-standing problem in physics, involving the apparent loss of information when matter falls into a black hole...", "The conflict arises from the principles of general relativity and quantum mechanics, and resolving it is a significant challenge...", "Stephen Hawking proposed a resolution to the information paradox by suggesting that black holes emit radiation, now known as Hawking radiation, which carries away information."]
+                },
+                {
+                        "tag": "BlackHoleEmissions",
+                        "patterns": ["Explain black hole emissions.", "Discuss Hawking radiation and its significance.", "Tell me about the effects of Hawking radiation on black holes."],
+                        "responses": ["Black holes can emit Hawking radiation, a theoretical prediction by Stephen Hawking...", "Hawking radiation has profound implications, as it suggests that black holes can slowly lose mass and eventually evaporate...", "The emission of Hawking radiation can lead to the eventual evaporation and disappearance of smaller black holes."]
+                },
+                {
+                        "tag": "DarkMatterGalaxies",
+                        "patterns": ["Discuss the role of dark matter in galaxies.", "Explain the evidence for dark matter's influence on galaxy rotation.", "Tell me about dark matter halos."],
+                        "responses": ["Dark matter plays a critical role in galaxies by providing the gravitational pull that holds galaxies together...", "Evidence for dark matter's influence includes the observed flat rotation curves of galaxies, which cannot be explained by visible matter alone...", "Dark matter halos are thought to surround galaxies, extending well beyond the visible stars and contributing to the overall mass of galaxies."]
+                },
+                {
+                        "tag": "BlackHoleObservations",
+                        "patterns": ["Explain how astronomers observe black holes.", "Discuss the role of X-ray and radio observations in studying black holes.", "Tell me about the Event Horizon Telescope."],
+                        "responses": ["Astronomers observe black holes using various methods, including studying their effects on nearby objects and detecting their emissions...", "X-ray and radio observations are essential for studying black holes, as they can reveal the high-energy processes and jets associated with black hole activity...", "The Event Horizon Telescope made history by capturing the first-ever image of a black hole, specifically the supermassive black hole at the center of the M87 galaxy."]
+                },
+                {
+                        "tag": "DarkMatterExperiments",
+                        "patterns": ["Discuss experiments and searches for dark matter.", "Explain underground experiments and direct dark matter detection.", "Tell me about dark matter experiments at particle accelerators."],
+                        "responses": ["Scientists conduct experiments to search for dark matter, including underground experiments to shield from cosmic rays and detect dark matter particles directly...", "Direct dark matter detection aims to observe rare interactions between dark matter particles and ordinary matter...", "Particle accelerators like the Large Hadron Collider (LHC) are used to create conditions that might produce or reveal dark matter particles."]
+                },
+                {
+                        "tag": "BlackHoleMysteries",
+                        "patterns": ["Discuss unsolved mysteries of black holes.", "Explain the information paradox and its unresolved nature.", "Tell me about black hole singularities."],
+                        "responses": ["Black holes continue to present intriguing mysteries, including the unresolved black hole information paradox...", "The information paradox involves the apparent loss of information when matter falls into a black hole, challenging our understanding of quantum mechanics...", "Black hole singularities are points at the center of black holes where gravity becomes infinitely strong, and the laws of physics as we know them break down."]
+                },
+                {
+                        "tag": "DarkMatterDetectionChallenges",
+                        "patterns": ["Discuss challenges in detecting dark matter.", "Explain the difficulties in identifying dark matter particles.", "Tell me about the search for non-gravitational interactions with dark matter."],
+                        "responses": ["Detecting dark matter faces several challenges, including its elusive nature and lack of direct interactions with light or matter...", "Identifying dark matter particles is difficult because they do not interact strongly with ordinary matter and are often invisible...", "The search for non-gravitational interactions aims to discover ways in which dark matter interacts with the known particles beyond gravitational effects."]
+                },
+                {
+                        "tag": "BlackHoleCollisions",
+                        "patterns": ["Explain black hole collisions and gravitational wave detection.", "Discuss the significance of LIGO and Virgo observatories.", "Tell me about the first detection of a black hole collision."],
+                        "responses": ["Black hole collisions occur when two black holes spiral towards each other and eventually merge, releasing gravitational waves...", "LIGO and Virgo observatories are crucial for detecting gravitational waves, allowing us to observe black hole collisions and other cosmic events...", "The first detection of a black hole collision by LIGO and Virgo marked a groundbreaking moment in astrophysics."]
+                },
+                {
+                        "tag": "DarkMatterHypotheses",
+                        "patterns": ["Explain alternative hypotheses for dark matter.", "Discuss Modified Newtonian Dynamics (MOND) and its implications.", "Tell me about self-interacting dark matter."],
+                        "responses": ["Alternative hypotheses for dark matter include theories like Modified Newtonian Dynamics (MOND) that seek to modify gravity rather than introduce new particles...", "MOND proposes that gravitational effects at galactic scales are different from what is predicted by general relativity, with implications for dark matter...", "Self-interacting dark matter is a hypothesis suggesting that dark matter particles can interact with each other, affecting their behavior in galaxies."]
+                },
+                {
+                        "tag": "BlackHoleSpacetime",
+                        "patterns": ["Discuss the warping of spacetime around black holes.", "Explain how black holes create gravitational wells.", "Tell me about the concept of an event horizon."],
+                        "responses": ["Black holes warp spacetime around them due to their immense gravitational pull, creating a deep gravitational well...", "Gravitational wells are regions of spacetime where the curvature is significant, causing objects to follow curved paths around massive objects...", "The event horizon is the boundary around a black hole beyond which nothing, not even light, can escape due to the extreme gravity."]
+                },
+                {
+                        "tag": "DarkMatterGalacticStructure",
+                        "patterns": ["Discuss the role of dark matter in galactic structure.", "Explain dark matter's influence on galaxy dynamics.", "Tell me about dark matter's distribution in galaxies."],
+                        "responses": ["Dark matter plays a crucial role in shaping the structure and dynamics of galaxies...", "Dark matter's gravitational pull influences the rotation of galaxies, stabilizing them and explaining the observed flat rotation curves...", "Dark matter is thought to be distributed in halos surrounding galaxies, with most of its mass residing beyond the visible stars."]
+                },
+                {
+                        "tag": "BlackHoleJetPhenomena",
+                        "patterns": ["Explain the formation of jets in black hole systems.", "Discuss relativistic jets and their high-speed ejections from black holes.", "Tell me about the impact of black hole jets on their surroundings."],
+                        "responses": ["Black holes can generate powerful jets of particles and radiation through complex processes near their event horizons...", "Relativistic jets are high-speed ejections of particles and energy from black hole systems, often observed in active galactic nuclei and quasars...", "Black hole jets can impact their surroundings, influencing star formation and the environments of galaxies."]
+                },
+                {
+                        "tag": "DarkMatterCosmology",
+                        "patterns": ["Discuss dark matter's role in cosmology.", "Explain the influence of dark matter on the large-scale structure of the universe.", "Tell me about dark matter's connection to cosmic microwave background radiation."],
+                        "responses": ["Dark matter is a key component of cosmological models and plays a significant role in the evolution of the universe...", "Dark matter's gravitational influence leads to the formation of large-scale cosmic structures, including galaxy clusters and filaments...", "Dark matter's presence is inferred from its gravitational effects on the cosmic microwave background radiation, offering clues about the universe's early conditions."]
+                },
+                {
+                        "tag": "BigBangTheory",
+                        "patterns": ["Explain the Big Bang theory.", "Discuss the origin and expansion of the universe.", "Tell me about the cosmic microwave background radiation."],
+                        "responses": ["The Big Bang theory is the prevailing cosmological model that describes the origin and expansion of the universe...", "It proposes that the universe began as a singularity and has been expanding for approximately 13.8 billion years...", "The cosmic microwave background radiation is the afterglow of the Big Bang, providing a snapshot of the early universe."]
+                },
+                {
+                        "tag": "ObservableUniverseSize",
+                        "patterns": ["Discuss the size of the observable universe.", "Explain the concept of the observable universe and its limits.", "Tell me about the size of the universe beyond the observable region."],
+                        "responses": ["The observable universe is the portion of the universe that we can observe and measure, currently estimated to be about 93 billion light-years in diameter...", "It has a finite size because it represents the maximum distance that light has had time to travel since the Big Bang...", "The size of the universe beyond the observable region remains a topic of theoretical discussion and exploration."]
+                },
+                {
+                        "tag": "CosmicInflation",
+                        "patterns": ["Explain the concept of cosmic inflation.", "Discuss the role of inflation in the early universe.", "Tell me about the evidence supporting the theory of cosmic inflation."],
+                        "responses": ["Cosmic inflation is a theory that suggests a rapid and exponential expansion of the universe during its early moments...", "Inflation helps explain the uniformity and flatness of the universe and the origin of cosmic structures...", "Evidence supporting cosmic inflation includes observations of the cosmic microwave background and the large-scale structure of the universe."]
+                },
+                {
+                        "tag": "AIThoughtsOnSpace",
+                        "patterns": [
+                            "What does AI think about space?",
+                            "Share AI's perspective on the cosmos.",
+                            "Discuss AI's insights into space exploration."
+                        ],
+                        "responses": [
+                            "AI doesn't have personal thoughts, feelings, or consciousness. It operates based on programmed algorithms and data. However, AI can provide information, analysis, and insights related to space and a wide range of topics based on the data it has been trained on.",
+                            "AI serves as a tool to process and present existing knowledge about space. It can answer questions, provide explanations, and assist in various space-related tasks by leveraging the data it has been trained on."
+                        ]
+                },
+                {
+                        "tag": "AIPotentialHarm",
+                        "patterns": [
+                            "What are the dangers of AI?",
+                            "How can AI technology pose a threat to humanity?",
+                            "In what ways can AI be harmful to people?",
+                            "What are the risks associated with artificial intelligence?",
+                            "What potential downsides come with AI development?",
+                            "Can AI systems be a danger to society?",
+                            "What are the negative consequences of AI?",
+                            "How might AI technology impact society negatively?",
+                            "Are there any concerns about the dark side of AI?",
+                            "Explain the potential harm of AI in layman's terms."
+                        ],
+                        "responses": [
+                            "AI is a tool created and controlled by humans, and its behavior is determined by its programming and data. Whether AI is a threat depends on how it is designed and used.",
+                            "Ethical and responsible development of AI is essential to minimize potential harm. AI's impact on humanity is a topic of ongoing research and concern, with a focus on ensuring safety and beneficial use.",
+                            "One potential harm of AI is job displacement due to automation. This can lead to economic challenges and job market disruptions.",
+                            "AI can also raise concerns about data privacy, as it often requires access to personal information for learning and decision-making.",
+                            "Bias in AI algorithms can lead to unfair treatment and discrimination, which is a significant concern for society.",
+                            "There is a risk of AI being used in cyberattacks, deepfake creation, and the spread of misinformation, highlighting the need for safeguards.",
+                            "To mitigate harm, researchers and developers are working on improving AI transparency, fairness, and accountability.",
+                            "Governments and organizations are implementing regulations to ensure responsible AI development and usage, focusing on safety and ethics.",
+                            "The negative consequences of AI can include a loss of personal privacy, job loss, and potential misuse by malicious actors.",
+                            "AI's impact on society is a complex topic with both promise and potential pitfalls. Continued research and responsible use are key to harnessing its benefits while minimizing harm."
+                        ]
+                },
+                {
+                        "tag": "wikipedia",
+                        "patterns": ["Tell me about this on wikipedia", "can search on wikipedia?", "Give me information on from wikipedia"],
+                        "response": []
+                },
+                {
+                        "tag": "joke",
+                        "patterns": ["Tell me a joke", "Share a funny joke", "I could use a laugh", "Joke time"],
+                        "response": [" "]
+                },
+                {
+                        "tag": "programming",
+                        "patterns": [
+                          "Can you help me with a programming problem?",
+                          "I'm stuck in my code, can you assist?",
+                          "How do I use [programming language] to...",
+                          "Any idea how to fix this error?",
+                          "I need help with a coding challenge",
+                          "What's the syntax for [specific task] in [programming language]?",
+                          "Could you explain [programming concept] to me?",
+                          "I'm learning [programming language], any tips?",
+                          "Do you have a solution for this algorithm problem?",
+                          "Need guidance on my code",
+                          "Programming help needed!",
+                          "How would you approach solving [problem] in [programming language]?",
+                          "Recommend a good resource for learning [programming language]"
+                        ],
+                        "responses": [
+                          "Sure, I'd be happy to help! What specific problem are you facing?",
+                          "Of course! Please share the details of the coding issue you're experiencing.",
+                          "Certainly! Let me know what you're trying to achieve, and I'll do my best to assist.",
+                          "I can help with that. What error message are you encountering?",
+                          "Coding challenges can be tricky. Tell me more about the challenge you're working on.",
+                          "Sure, I can assist with [programming language]. What do you need help with?",
+                          "I'd be happy to explain. What part of [programming concept] is unclear to you?",
+                          "Learning [programming language] is a great choice! Any specific topics you find challenging?",
+                          "I love algorithm problems! Let me know the details, and we can work through it together.",
+                          "Happy to provide guidance! Share your code or describe the issue you're facing.",
+                          "Absolutely! What's the specific programming task you're working on?",
+                          "Sure, I can help with that. What [programming concept] are you struggling to understand?",
+                          "For sure! What level of proficiency do you have in [programming language]? I can tailor my advice accordingly.",
+                          "I recommend [book/course/website] for learning [programming language]. It's comprehensive and beginner-friendly."
+                        ]
+                },{
+                        "tag": "calculate",
+                        "patterns": [
+                          "Calculate the multiplication of {num1} and {num2}",
+                          "What is the product of {num1} and {num2}?",
+                          "Multiply {num1} by {num2}",
+                          "What is {num1} multiplied by {num2}?",
+                          "Calculate the sum of {num1} and {num2}",
+                          "What is the sum of {num1} and {num2}?",
+                          "Add {num1} and {num2}"
+                        ],
+                        "responses": [
+                          "To calculate the multiplication of {num1} and {num2} in Python, you can use: `result = {num1} * {num2}`.",
+                          "To find the product of {num1} and {num2} in Python, the code is: `result = {num1} * {num2}`.",
+                          "To multiply {num1} by {num2} in Python, use: `result = {num1} * {num2}`.",
+                          "To find {num1} multiplied by {num2} in Python, the code is: `result = {num1} * {num2}`.",
+                          "To calculate the sum of {num1} and {num2} in Python, you can use: `result = {num1} + {num2}`.",
+                          "To find the sum of {num1} and {num2} in Python, the code is: `result = {num1} + {num2}`.",
+                          "To add {num1} and {num2} in Python, use: `result = {num1} + {num2}`."
+                        ]
+                }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+        ]
+}

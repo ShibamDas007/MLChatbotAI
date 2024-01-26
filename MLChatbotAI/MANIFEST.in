@@ -1,0 +1,5 @@
+include README.md
+recursive-include data *.json
+recursive-include model *.h5 *.pkl *.pkl
+include train_chatbot.py
+inlcude Chatbot_AI.py
