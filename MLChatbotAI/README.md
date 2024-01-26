@@ -14,10 +14,9 @@ You can install MLChatbotAI using pip:
 
 ```bash
 pip install MLChatbotAI
-
-
-
 ```
+
+```bash
 from MLChatbotAI import ChatBot
 
 bot = ChatBot()
@@ -37,10 +36,9 @@ user_input_custom = "How are you?"
 response_custom = trainer.get_response_using_model(custom_model, custom_words, custom_classes, user_input_custom)
 print(response_custom)
 ```
+# Train Chatbot with external data
 
-
-
-```
+```bash
 from MLChatbotAI import ChatBotTrainer
 
 trainer = ChatBotTrainer()
