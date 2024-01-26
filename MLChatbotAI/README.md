@@ -51,6 +51,10 @@ trained_model_default, words_default, classes_default = trainer.train_default()
 ```
 # This is example of train model on custom data wihtout giving no path
 ```bash
+from MLChatbotAI import ChatBotTrainer
+
+trainer = ChatBotTrainer()
+
 custom_intents_data = {
     "intents": [
         {"tag": "greeting", "patterns": ["Hi", "Hello", "Hey"], "responses": ["Hello! How can I help you?"]},
@@ -62,6 +66,10 @@ trained_model_custom, words_custom, classes_custom = trainer.train_custom(custom
 
 # This is code for train model with giving path
 ```bash
+from MLChatbotAI import ChatBotTrainer
+
+trainer = ChatBotTrainer()
+
 file_path = "path/to/custom_intents_file.json"
 trained_model_file, words_file, classes_file = trainer.train_from_file(file_path)
 ```
